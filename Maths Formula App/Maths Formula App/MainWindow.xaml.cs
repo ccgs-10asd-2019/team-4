@@ -24,5 +24,10 @@ namespace Maths_Formula_App
         {
             InitializeComponent();
         }
+
+        private void Help_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
