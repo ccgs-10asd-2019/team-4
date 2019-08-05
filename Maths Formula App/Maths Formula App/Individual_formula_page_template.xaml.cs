@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace Maths_Formula_App
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Individual_formula_page_template.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Individual_formula_page_template : Page
     {
-        public MainWindow()
+        public Individual_formula_page_template()
         {
             InitializeComponent();
-        }
-
-        private void Help_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
