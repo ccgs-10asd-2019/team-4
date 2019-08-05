@@ -10,19 +10,21 @@
 
     <Grid 
         Background="White">
-        
+
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="500"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Formula" VerticalAlignment="Center" FontSize="36" Height="50" Width="250"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="300" Margin="25,50
+                 ,0,0" Grid.Row="1" TextWrapping="Wrap" Text="put some information here.&#xD;&#xA;&#xD;&#xA;     eg:&#xD;&#xA;&#x9;how to use the formula, &#xD;&#xA;&#x9;interesting properties etc. " VerticalAlignment="Top" Width="250" FontSize="14"/>
 
     </Grid>
 </Page>
