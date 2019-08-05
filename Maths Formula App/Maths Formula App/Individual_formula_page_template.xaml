@@ -22,5 +22,8 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Formula" VerticalAlignment="Center" FontSize="36" Height="50" Width="250"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="306" Margin="25,59,0,0" Grid.Row="1" TextWrapping="Wrap" Text="put things to do with the formula in here, like how to use it and when to use it and with what to use it, and wy to use it. " VerticalAlignment="Top" Width="250" FontSize="14" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="15,20,0,0" Grid.Row="1" TextWrapping="Wrap" Text="put your formulae here!" VerticalAlignment="Top" Width="189" FontSize="16" FontWeight="Bold"/>
+        <InkCanvas HorizontalAlignment="Left" Height="304" Margin="10,61,0,0" Grid.Row="1" VerticalAlignment="Top" Width="480" Cursor="Pen" Background="#FF202020"/>
     </Grid>
 </Page>

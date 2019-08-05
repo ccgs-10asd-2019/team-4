@@ -24,5 +24,10 @@ namespace Maths_Formula_App
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
