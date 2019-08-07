@@ -29,5 +29,25 @@ namespace Maths_Formula_App
         {
 
         }
+
+        private void Trig_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Expo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Geo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Personal_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
