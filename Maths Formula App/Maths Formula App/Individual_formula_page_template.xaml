@@ -21,6 +21,7 @@
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Formula" VerticalAlignment="Center" FontSize="36" Height="50" Width="250"/>
+        <TextBlock x:Name="___formulaName_" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Formula" VerticalAlignment="Center" FontSize="36" Height="50" Width="250"/>
+        <TextBox x:Name="___informationBox_" Grid.Column="1" HorizontalAlignment="Left" Height="325" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" Text="put information here on the formula. &#xD;&#xA;&#xD;&#xA;eg:&#xD;&#xA;&#x9;when to use it and on what. &#xD;&#xA;&#x9;&#xD;&#xA;&#x9;why to use it, what it will do.  &#xD;&#xA;&#xD;&#xA;&#x9;how to use it. &#xD;&#xA;&#xD;&#xA;&#x9;some random examples for practice? up &#x9;to the person making the formula. &#xD;&#xA;&#xD;&#xA;" VerticalAlignment="Top" Width="280" TextChanged="TextBox_TextChanged"/>
     </Grid>
 </Page>
