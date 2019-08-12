@@ -37,7 +37,7 @@ namespace Maths_Formula_App
 
         private void Expo_Click(object sender, RoutedEventArgs e)
         {
-
+     
         }
 
         private void Geo_Click(object sender, RoutedEventArgs e)
