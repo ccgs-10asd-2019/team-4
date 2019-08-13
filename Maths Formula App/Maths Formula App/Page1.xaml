@@ -8,7 +8,25 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Grid>
-        
+    <Grid Background="#FF542828">
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="63" Margin="191,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408"/>
+        <Button x:Name="n1" Content="1" HorizontalAlignment="Left" Margin="173,130,0,0" VerticalAlignment="Top" Width="75" Click="n1_Click"/>
+        <Button x:Name="n2" Content="2" HorizontalAlignment="Left" Margin="341,130,0,0" VerticalAlignment="Top" Width="75" Click="n2_Click"/>
+        <Button x:Name="n3" Content="3" HorizontalAlignment="Left" Margin="504,130,0,0" VerticalAlignment="Top" Width="75" Click="n3_Click"/>
+        <Button x:Name="n4" Content="4" HorizontalAlignment="Left" Margin="173,194,0,0" VerticalAlignment="Top" Width="75" Click="n4_Click"/>
+        <Button x:Name="n5" Content="5" HorizontalAlignment="Left" Margin="341,194,0,0" VerticalAlignment="Top" Width="75" Click="n5_Click"/>
+        <Button x:Name="n6" Content="6" HorizontalAlignment="Left" Margin="504,194,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.52,2.916" Click="n6_Click"/>
+        <Button x:Name="n7" Content="7" HorizontalAlignment="Left" Margin="173,264,0,0" VerticalAlignment="Top" Width="75" Click="n7_Click"/>
+        <Button x:Name="n8" Content="8" HorizontalAlignment="Left" Margin="341,264,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.673,4.958" Click="n8_Click"/>
+        <Button x:Name="n9" Content="9" HorizontalAlignment="Left" Margin="504,264,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.52,2.916" Click="n9_Click"/>
+        <Button x:Name="n0" Content="0" HorizontalAlignment="Left" Margin="341,334,0,0" VerticalAlignment="Top" Width="75" Click="n0_Click"/>
+        <Button x:Name="ndot" Content="." HorizontalAlignment="Left" Margin="173,334,0,0" VerticalAlignment="Top" Width="75" Click="ndot_Click"/>
+        <Button x:Name="bc" Content="C" HorizontalAlignment="Left" Margin="504,334,0,0" VerticalAlignment="Top" Width="75" Click="bc_Click"/>
+        <Button x:Name="bad" Content="+" HorizontalAlignment="Left" Margin="651,130,0,0" VerticalAlignment="Top" Width="75" Click="bad_Click"/>
+        <Button x:Name="bsub" Content="-" HorizontalAlignment="Left" Margin="651,194,0,0" VerticalAlignment="Top" Width="75" Click="bsub_Click"/>
+        <Button x:Name="bmult" Content="*" HorizontalAlignment="Left" Margin="651,264,0,0" VerticalAlignment="Top" Width="75" Click="bmul_Click"/>
+        <Button x:Name="bdiv" Content="/" HorizontalAlignment="Left" Margin="651,334,0,0" VerticalAlignment="Top" Width="75" Click="bdiv_Click"/>
+        <Button x:Name="nequal" Content="=" HorizontalAlignment="Left" Margin="341,392,0,0" VerticalAlignment="Top" Width="75" Click="nequal_Click"/>
+
     </Grid>
 </Page>
