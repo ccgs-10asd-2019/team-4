@@ -217,5 +217,15 @@ namespace Maths_Formula_App
                 }
             }
         }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void help_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
