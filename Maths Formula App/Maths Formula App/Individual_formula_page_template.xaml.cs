@@ -25,6 +25,12 @@ namespace Maths_Formula_App
             InitializeComponent();
         }
 
+        private void Calculator(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(new Page1());
+            this.Frame.Navigate(new Uri("Page1.xaml", UriKind.Relative));
+        }
+
 
 
         /* APPARENTLY SOLVES THE QUADRATIC EQUATION. 
