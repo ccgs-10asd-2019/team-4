@@ -8,25 +8,34 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Grid Background="#FF542828">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF2A2D97" Offset="1"/>
+                <GradientStop Color="#FEFFFFFF"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="63" Margin="191,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408"/>
-        <Button x:Name="n1" Content="1" HorizontalAlignment="Left" Margin="173,130,0,0" VerticalAlignment="Top" Width="75" Click="n1_Click"/>
-        <Button x:Name="n2" Content="2" HorizontalAlignment="Left" Margin="341,130,0,0" VerticalAlignment="Top" Width="75" Click="n2_Click"/>
-        <Button x:Name="n3" Content="3" HorizontalAlignment="Left" Margin="504,130,0,0" VerticalAlignment="Top" Width="75" Click="n3_Click"/>
-        <Button x:Name="n4" Content="4" HorizontalAlignment="Left" Margin="173,194,0,0" VerticalAlignment="Top" Width="75" Click="n4_Click"/>
-        <Button x:Name="n5" Content="5" HorizontalAlignment="Left" Margin="341,194,0,0" VerticalAlignment="Top" Width="75" Click="n5_Click"/>
-        <Button x:Name="n6" Content="6" HorizontalAlignment="Left" Margin="504,194,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.52,2.916" Click="n6_Click"/>
-        <Button x:Name="n7" Content="7" HorizontalAlignment="Left" Margin="173,264,0,0" VerticalAlignment="Top" Width="75" Click="n7_Click"/>
-        <Button x:Name="n8" Content="8" HorizontalAlignment="Left" Margin="341,264,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.673,4.958" Click="n8_Click"/>
-        <Button x:Name="n9" Content="9" HorizontalAlignment="Left" Margin="504,264,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.52,2.916" Click="n9_Click"/>
-        <Button x:Name="n0" Content="0" HorizontalAlignment="Left" Margin="341,334,0,0" VerticalAlignment="Top" Width="75" Click="n0_Click"/>
-        <Button x:Name="ndot" Content="." HorizontalAlignment="Left" Margin="173,334,0,0" VerticalAlignment="Top" Width="75" Click="ndot_Click"/>
-        <Button x:Name="bc" Content="C" HorizontalAlignment="Left" Margin="504,334,0,0" VerticalAlignment="Top" Width="75" Click="bc_Click"/>
-        <Button x:Name="bad" Content="+" HorizontalAlignment="Left" Margin="651,130,0,0" VerticalAlignment="Top" Width="75" Click="bad_Click"/>
-        <Button x:Name="bsub" Content="-" HorizontalAlignment="Left" Margin="651,194,0,0" VerticalAlignment="Top" Width="75" Click="bsub_Click"/>
-        <Button x:Name="bmult" Content="*" HorizontalAlignment="Left" Margin="651,264,0,0" VerticalAlignment="Top" Width="75" Click="bmul_Click"/>
-        <Button x:Name="bdiv" Content="/" HorizontalAlignment="Left" Margin="651,334,0,0" VerticalAlignment="Top" Width="75" Click="bdiv_Click"/>
-        <Button x:Name="nequal" Content="=" HorizontalAlignment="Left" Margin="341,392,0,0" VerticalAlignment="Top" Width="75" Click="nequal_Click"/>
+        <Button x:Name="n1" Content="1" HorizontalAlignment="Left" Margin="52,130,0,0" VerticalAlignment="Top" Width="75" Click="n1_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="n2" Content="2" HorizontalAlignment="Left" Margin="220,130,0,0" VerticalAlignment="Top" Width="75" Click="n2_Click" Foreground="White" Background="#FF223F84"/>
+        <Button x:Name="n3" Content="3" HorizontalAlignment="Left" Margin="383,130,0,0" VerticalAlignment="Top" Width="75" Click="n3_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="n4" Content="4" HorizontalAlignment="Left" Margin="52,194,0,0" VerticalAlignment="Top" Width="75" Click="n4_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="n5" Content="5" HorizontalAlignment="Left" Margin="220,194,0,0" VerticalAlignment="Top" Width="75" Click="n5_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="n6" Content="6" HorizontalAlignment="Left" Margin="383,194,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.52,2.916" Click="n6_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="n7" Content="7" HorizontalAlignment="Left" Margin="52,264,0,0" VerticalAlignment="Top" Width="75" Click="n7_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="n8" Content="8" HorizontalAlignment="Left" Margin="220,264,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.673,4.958" Click="n8_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="n9" Content="9" HorizontalAlignment="Left" Margin="383,264,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.52,2.916" Click="n9_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="n0" Content="0" HorizontalAlignment="Left" Margin="220,334,0,0" VerticalAlignment="Top" Width="75" Click="n0_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="ndot" Content="." HorizontalAlignment="Left" Margin="52,334,0,0" VerticalAlignment="Top" Width="75" Click="ndot_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="bc" Content="C" HorizontalAlignment="Left" Margin="383,334,0,0" VerticalAlignment="Top" Width="75" Click="bc_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="bad" Content="+" HorizontalAlignment="Left" Margin="530,130,0,0" VerticalAlignment="Top" Width="75" Click="bad_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="bsub" Content="-" HorizontalAlignment="Left" Margin="530,194,0,0" VerticalAlignment="Top" Width="75" Click="bsub_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="bmult" Content="*" HorizontalAlignment="Left" Margin="530,264,0,0" VerticalAlignment="Top" Width="75" Click="bmul_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="bdiv" Content="/" HorizontalAlignment="Left" Margin="530,334,0,0" VerticalAlignment="Top" Width="75" Click="bdiv_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="nequal" Content="=" HorizontalAlignment="Left" Margin="220,392,0,0" VerticalAlignment="Top" Width="75" Click="nequal_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="20,22,0,0" VerticalAlignment="Top" Width="75" Click="back_Click" Foreground="White" Background="#FF223F84"/>
+        <Button x:Name="Help" Content="Help" HorizontalAlignment="Left" Margin="710,10,0,0" VerticalAlignment="Top" Width="75" Click="help_Click" Background="#FF223F84" Foreground="White"/>
 
     </Grid>
 </Page>
