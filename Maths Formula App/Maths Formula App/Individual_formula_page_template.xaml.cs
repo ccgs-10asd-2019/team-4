@@ -58,7 +58,7 @@ namespace Maths_Formula_App
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
             Tuple<double, double> solution = SolveQuadratic(Convert.ToDouble(___inputBoxa__.Text), Convert.ToDouble(___inputBoxb__.Text), Convert.ToDouble(___inputBoxc__.Text));
-
+            ___endProductBox_.Text = solution.ToString();
         }
     }
 }
