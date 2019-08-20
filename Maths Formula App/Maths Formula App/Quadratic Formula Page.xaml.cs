@@ -60,5 +60,15 @@ namespace Maths_Formula_App
             Tuple<double, double> solution = SolveQuadratic(Convert.ToDouble(___inputBoxa__.Text), Convert.ToDouble(___inputBoxb__.Text), Convert.ToDouble(___inputBoxc__.Text));
             ___endProductBox_.Text = solution.ToString();
         }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void help_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
