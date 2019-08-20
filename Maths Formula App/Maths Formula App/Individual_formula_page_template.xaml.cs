@@ -31,6 +31,12 @@ namespace Maths_Formula_App
             this.Frame.Navigate(new Uri("Page1.xaml", UriKind.Relative));
         }
 
+        private void Quadratic_Formula_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(new Quadratic_Formula_Page());
+            this.Frame.Navigate(new Uri("Quadratic_Formula_Page.xaml", UriKind.Relative));
+        }
+
 
 
         /* APPARENTLY SOLVES THE QUADRATIC EQUATION. 

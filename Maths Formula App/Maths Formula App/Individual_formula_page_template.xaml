@@ -12,32 +12,33 @@
         </DockPanel>
 
 
-    <Grid Height="451">
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="#FF2A2D97" Offset="1"/>
-                <GradientStop Color="#FEFFFFFF"/>
-            </LinearGradientBrush>
-        </Grid.Background>
+        <Grid Height="451">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF2A2D97" Offset="1"/>
+                    <GradientStop Color="#FEFFFFFF"/>
+                </LinearGradientBrush>
+            </Grid.Background>
 
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="149"/>
-            <ColumnDefinition Width="351"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="149"/>
+                <ColumnDefinition Width="351"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="5*"/>
-        </Grid.RowDefinitions>
-        <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small" Height="25" Width="140"/>
-        <TextBlock HorizontalAlignment="Left" Margin="20,15,0,10" TextWrapping="Wrap" Text="Formula" VerticalAlignment="Center" FontSize="36" Height="50" Width="250" Grid.Column="1"/>
-        <Button x:Name="Help" Content="Help" Grid.Column="2" HorizontalAlignment="Left" Height="31" Margin="170,15,0,0" VerticalAlignment="Top" Width="103" Foreground="White" Background="#FF223F84"/>
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="29,15,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White"/>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small" Height="25" Width="140"/>
+            <TextBlock HorizontalAlignment="Left" Margin="20,15,0,10" TextWrapping="Wrap" Text="Formula" VerticalAlignment="Center" FontSize="36" Height="50" Width="250" Grid.Column="1"/>
+            <Button x:Name="Help" Content="Help" Grid.Column="2" HorizontalAlignment="Left" Height="31" Margin="170,15,0,0" VerticalAlignment="Top" Width="103" Foreground="White" Background="#FF223F84"/>
+            <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="29,15,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White"/>
 
-        <Button Content="Standard Calculator" HorizontalAlignment="Left" Margin="0,333,0,0" Grid.Row="1" VerticalAlignment="Top" Width="149" Click="Calculator"/>
-    </Grid>
+            <Button Content="Standard Calculator" HorizontalAlignment="Left" Margin="0,317,0,0" Grid.Row="1" VerticalAlignment="Top" Width="149" Click="Calculator"/>
+            <Button x:Name="Quadratic_Formula" Content="Button" HorizontalAlignment="Left" Height="23" Margin="0,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="149" Click="Quadratic_Formula_Click"/>
+        </Grid>
     </StackPanel>
 </Page>
