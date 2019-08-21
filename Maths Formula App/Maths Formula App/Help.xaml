@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Help">
 
-    <Grid x:Name="back">
+    <Grid x:Name="back" HorizontalAlignment="Right" Width="800" Height="450" VerticalAlignment="Top">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>

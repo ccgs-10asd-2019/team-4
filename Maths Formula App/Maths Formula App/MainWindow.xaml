@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Maths_Formula_App"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
+    <StackPanel Height="422" VerticalAlignment="Top" HorizontalAlignment="Left" Width="795">
         <DockPanel>
             <Frame x:Name="Frame" NavigationUIVisibility="Hidden" />
         </DockPanel>
