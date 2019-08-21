@@ -38,7 +38,7 @@
             <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="29,15,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White"/>
 
             <Button Content="Standard Calculator" HorizontalAlignment="Left" Margin="0,317,0,0" Grid.Row="1" VerticalAlignment="Top" Width="149" Click="Calculator"/>
-            <Button x:Name="Quadratic_Formula" Content="Button" HorizontalAlignment="Left" Height="23" Margin="0,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="149" Click="Quadratic_Formula_Click"/>
+            <Button x:Name="Quadratic_Formula" Content="Quadratic Formula" HorizontalAlignment="Left" Height="23" Margin="0,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="149" Click="Quadratic_Formula_Click"/>
         </Grid>
     </StackPanel>
 </Page>
