@@ -34,7 +34,7 @@
             </Grid.RowDefinitions>
             <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small" Height="25" Width="140"/>
             <TextBlock HorizontalAlignment="Left" Margin="20,15,0,10" TextWrapping="Wrap" Text="Formula" VerticalAlignment="Center" FontSize="36" Height="50" Width="250" Grid.Column="1"/>
-            <Button x:Name="Help" Content="Help" Grid.Column="2" HorizontalAlignment="Left" Height="31" Margin="170,15,0,0" VerticalAlignment="Top" Width="103" Foreground="White" Background="#FF223F84"/>
+            <Button x:Name="Help" Content="Help" Grid.Column="2" HorizontalAlignment="Left" Height="31" Margin="170,15,0,0" VerticalAlignment="Top" Width="103" Foreground="White" Background="#FF223F84" Click="Help_Button"/>
             <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="29,15,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White"/>
 
             <Button Content="Standard Calculator" HorizontalAlignment="Left" Margin="0,317,0,0" Grid.Row="1" VerticalAlignment="Top" Width="149" Click="Calculator"/>

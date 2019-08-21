@@ -30,7 +30,7 @@
                 <RowDefinition Height="121*"/>
             </Grid.RowDefinitions>
             <Image x:Name="Title" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="75" Margin="58,46,0,0" VerticalAlignment="Top" Width="494" Source="Images/Title.jpg" Grid.Column="1"/>
-            <Button x:Name="Trigonometry" Content="Trigonometry" HorizontalAlignment="Left" Margin="191,59,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="60" Click="Trig_Click" Background="#FF223F84" Foreground="White" Grid.Column="1"/>
+            <Button x:Name="Trigonometry" Content="Algebra" HorizontalAlignment="Left" Margin="191,59,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="60" Click="Trig_Click" Background="#FF223F84" Foreground="White" Grid.Column="1"/>
             <Button x:Name="Geometry" Content="Geometry" HorizontalAlignment="Left" Margin="136.5,59,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="60" Grid.Column="2" RenderTransformOrigin="-0.77,0.479" Click="Geo_Click" Foreground="White" Background="#FF223F84"/>
             <Button x:Name="Exponentials" Content="Exponentials" HorizontalAlignment="Left" Margin="68,59,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="60" RenderTransformOrigin="-0.588,0.505" Click="Expo_Click" Background="#FF223F84" Foreground="White" Grid.Column="1"/>
             <Button x:Name="Personal" Content="Personal" HorizontalAlignment="Left" Margin="10.5,59,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="60" Grid.Column="2" Click="Personal_Click" Background="#FF223F84" Foreground="White"/>
