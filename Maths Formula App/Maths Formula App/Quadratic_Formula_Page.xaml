@@ -11,11 +11,16 @@
             <Frame x:Name="Frame" NavigationUIVisibility="Hidden" />
         </DockPanel>
 
-    <Grid
-        Background="White">
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF2A2D97" Offset="1"/>
+                    <GradientStop Color="#FEFFFFFF"/>
+                </LinearGradientBrush>
+            </Grid.Background>
 
-
-        <Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
             <ColumnDefinition Width="500"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -28,13 +33,15 @@
         <TextBlock x:Name="___formulaName_" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Formula" VerticalAlignment="Center" FontSize="36" Height="50" Width="250"/>
         <TextBox x:Name="___informationBox_" Grid.Column="1" HorizontalAlignment="Left" Height="325" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" Text="put information here on the formula. &#xD;&#xA;&#xD;&#xA;eg:&#xD;&#xA;&#x9;when to use it and on what. &#xD;&#xA;&#x9;&#xD;&#xA;&#x9;why to use it, what it will do.  &#xD;&#xA;&#xD;&#xA;&#x9;how to use it. &#xD;&#xA;&#xD;&#xA;&#x9;some random examples for practice? up &#x9;to the person making the formula. &#xD;&#xA;&#xD;&#xA;" VerticalAlignment="Top" Width="280"/>
         <TextBox x:Name="___Boxa__" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="43" Text="a: "/>
-        <Button x:Name="___Button_" Content="enter" HorizontalAlignment="Left" Margin="10,134,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="buttonClicked"/>
+        <Button x:Name="___Button_" Content="enter" HorizontalAlignment="Left" Margin="10,134,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="buttonClicked" Background="#FF223F84" Foreground="White"/>
         <TextBox x:Name="___Boxb__" HorizontalAlignment="Left" Height="25" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="43" Text="b: "/>
         <TextBox x:Name="___Boxc__" HorizontalAlignment="Left" Height="25" Margin="10,70,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="43" Text="c: "/>
         <TextBox x:Name="___endProductBox_" HorizontalAlignment="Left" Height="23" Margin="10,159,0,0" Grid.Row="1" TextWrapping="Wrap" Text="end product (x)" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="___inputBoxa__" HorizontalAlignment="Left" Height="25" Margin="58,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="43"/>
         <TextBox x:Name="___inputBoxc__" HorizontalAlignment="Left" Height="25" Margin="58,70,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="43"/>
         <TextBox x:Name="___inputBoxb__" HorizontalAlignment="Left" Height="25" Margin="58,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="43"/>
-    </Grid>
+            <Button x:Name="Back" Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="101,10,0,0" VerticalAlignment="Top" Width="75" Foreground="White" Background="#FF223F84" Click="back_Click"/>
+            <Button x:Name="Help" Content="Help" Grid.Column="1" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="help_Click"/>
+        </Grid>
     </StackPanel>
 </Page>

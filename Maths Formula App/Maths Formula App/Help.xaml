@@ -17,7 +17,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Image x:Name="HelpTitle" HorizontalAlignment="Left" Height="35" Margin="64,10,0,0" VerticalAlignment="Top" Width="210" Source="Images/Title2.jpg"/>
-        <Button x:Name="back1" Content="Button" HorizontalAlignment="Left" Margin="640,10,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="back_Click"/>
-        <TextBlock HorizontalAlignment="Left" Margin="64,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="148" Width="427" Foreground="White" FontSize="18"><Run Text="Welcome to your Mathematics Formula App!"/><LineBreak/><Run Text="You can navigate throughout the app by using the respective buttons. From the initial page you can us formulas from a branch of maths you desire, e.g. geometry, and when you want to use another simply press back and chose the next! There is also the opportunity to create your own formulas listed under 'Personal&quot;."/></TextBlock>
+        <Button x:Name="back1" Content="Back" HorizontalAlignment="Left" Margin="640,10,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="back_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="193" Width="427" Foreground="White" FontSize="18"><Run Text="Welcome to your Mathematics Formula App!"/><LineBreak/><Run Text="You can navigate throughout the app by using the respective buttons. From the initial page you can us formulas from a branch of maths you desire, e.g. geometry, and when you want to use another simply press back and chose the next! There is also the opportunity to create your own formulas listed under 'Personal'."/></TextBlock>
     </Grid>
 </Page>
