@@ -63,7 +63,8 @@ namespace Maths_Formula_App
         
         private void back_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(new Individual_formula_page_template());
+            this.Frame.Navigate(new Uri("Individual_formula_page_template.xaml", UriKind.Relative));
         }
 
         private void help_Click(object sender, RoutedEventArgs e)
