@@ -6,13 +6,13 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Individual_formula_page_template">
-    <StackPanel>
+    <StackPanel Height="450" VerticalAlignment="Top" HorizontalAlignment="Left" Width="800">
         <DockPanel>
             <Frame x:Name="Frame" NavigationUIVisibility="Hidden" />
         </DockPanel>
 
 
-        <Grid Height="451" HorizontalAlignment="Right" Width="800">
+        <Grid Height="451" HorizontalAlignment="Left" Width="800">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
