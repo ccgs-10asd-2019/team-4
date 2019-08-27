@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
-    <StackPanel>
+    <StackPanel Height="450" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="800">
     <DockPanel>
         <Frame x:Name="Frame" NavigationUIVisibility="Hidden" />
     </DockPanel>
