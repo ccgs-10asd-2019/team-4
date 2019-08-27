@@ -225,7 +225,8 @@ namespace Maths_Formula_App
 
         private void help_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(new Help());
+            this.Frame.Navigate(new Uri("Help.xaml", UriKind.Relative));
         }
     }
 }
