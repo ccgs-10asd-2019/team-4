@@ -20,6 +20,8 @@ namespace Maths_Formula_App
     /// </summary>
     public partial class Individual_formula_page_template : Page
     {
+        public EventHandler ladder;
+        
         public Individual_formula_page_template()
         {
             InitializeComponent();
@@ -41,6 +43,15 @@ namespace Maths_Formula_App
         {
             Frame.Navigate(new Help());
             this.Frame.Navigate(new Uri("Help.xaml", UriKind.Relative));
+        }
+        
+        public void ClimbLadder()
+        {
+            ladder(this, EventArgs.Empty);
+        }
+        private void Home_Return(object sender, RoutedEventArgs e)
+        {
+            ClimbLadder();
         }
 
 

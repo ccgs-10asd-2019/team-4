@@ -32,8 +32,17 @@ namespace Maths_Formula_App
 
         private void Trig_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(new Individual_formula_page_template());
-            this.Frame.Navigate(new Uri("Individual_formula_page_template.xaml", UriKind.Relative));
+            ShowAlgebra();
+        }
+        private void ShowAlgebra()
+        {
+            Individual_formula_page_template Page = new Individual_formula_page_template();
+            var AlgebraContent = Content;
+            Content = Page;
+            Page.ladder += (object sender, EventArgs e) =>
+            {
+                Content = AlgebraContent;
+            };
         }
 
         private void Expo_Click(object sender, RoutedEventArgs e)

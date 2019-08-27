@@ -11,7 +11,7 @@
             <Frame x:Name="Frame" NavigationUIVisibility="Hidden" />
         </DockPanel>
 
-        <Grid>
+        <Grid HorizontalAlignment="Left" Width="800">
             <Grid.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
