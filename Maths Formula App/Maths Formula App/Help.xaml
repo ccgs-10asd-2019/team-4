@@ -7,8 +7,11 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Help">
-
-    <Grid x:Name="back" HorizontalAlignment="Right" Width="800" Height="450" VerticalAlignment="Top">
+    <StackPanel>
+        <DockPanel>
+            <Frame x:Name="Frame" NavigationUIVisibility="Hidden" />
+        </DockPanel>
+        <Grid x:Name="back" HorizontalAlignment="Right" Width="800" Height="450" VerticalAlignment="Top">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="0"/>
@@ -20,4 +23,5 @@
         <Button x:Name="back1" Content="Back" HorizontalAlignment="Left" Margin="640,10,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="back_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="63,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="285" Width="427" Foreground="White" FontSize="18"><Run Text="Welcome to your Mathematics Formula App!"/><LineBreak/><Run Text="You can navigate throughout the app by using the respective buttons. From the initial page you can us formulas from a branch of maths you desire, e.g. geometry, and when you want to use another simply press back and chose the next! There is also the opportunity to create your own formulas listed under 'Personal'."/></TextBlock>
     </Grid>
+    </StackPanel>
 </Page>

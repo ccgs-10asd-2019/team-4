@@ -6,7 +6,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Individual_formula_page_template">
-    <StackPanel>
+    <StackPanel Height="450" VerticalAlignment="Top" HorizontalAlignment="Left" Width="800">
         <DockPanel>
             <Frame x:Name="Frame" NavigationUIVisibility="Hidden" />
         </DockPanel>
