@@ -141,14 +141,14 @@ namespace Maths_Formula_App
         private void bad_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
+            textBox1.Text = "+";
             Operation = "+";
         }
 
         private void bsub_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
+            textBox1.Text = "-";
             Operation = "-";
 
         }
@@ -156,20 +156,20 @@ namespace Maths_Formula_App
         private void bmul_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
+            textBox1.Text = "×";
             Operation = "*";
         }
 
         private void bdiv_Click(object sender, EventArgs e)
         {
             FirstNumber = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = "0";
+            textBox1.Text = "÷";
             Operation = "/";
         }
 
         private void bc_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "0";
+            textBox1.Text = "";
         }
 
         private void ndot_Click(object sender, EventArgs e)
@@ -207,7 +207,6 @@ namespace Maths_Formula_App
                 if (SecondNumber == 0)
                 {
                     textBox1.Text = "Cannot divide by zero";
-
                 }
                 else
                 {
