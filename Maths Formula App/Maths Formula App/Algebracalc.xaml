@@ -16,7 +16,8 @@
                 <GradientStop Color="#FEFFFFFF"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button x:Name="btnCalculate" Content="Button" HorizontalAlignment="Left" Margin="710,390,0,0" VerticalAlignment="Top" Width="75" Click="btnCalculate_Click"/>
-        <DataGrid HorizontalAlignment="Left" Height="311" Margin="44,30,0,0" VerticalAlignment="Top" Width="727"/>
+        <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="608,231,0,0" VerticalAlignment="Top" Width="75" Click="btnCalculate_Click"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="101,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="621"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="101,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="621" RenderTransformOrigin="-0.433,10.965"/>
     </Grid>
 </Page>

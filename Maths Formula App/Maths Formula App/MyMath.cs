@@ -8,15 +8,57 @@ namespace Maths_Formula_App
 {
     public class MyMath
     {
-        public double a { get; set; }
-
-        public int b { get; set; }
-
-        public double c { get; set; }
-
-        public string formula { get; set; }
-
-        public double result { get; set; }
+       public static double EvalExpression(char[] expr)
+        {
+            return parseSummands(expr, 0);
+        }
+       private static double parseSummands(char[] expr, int index)
+        {
+            double x = parseFactors(expr, ref index);
+            while (true)
+            {
+                char op = expr[index];
+                if (op != "+" && op != "-")
+                    return x;
+                index++;
+                double y = parseFactors(expr, ref index);
+                if (op == "+")
+                    x += y;
+                else
+                    x -= y;
+            }
+        }
+       private static double parseFactors(char[] expr, ref int index)
+        {
+            double x = GetDouble(expr, ref index);
+            while (true)
+            {
+                char op = expr[index];
+                if (op != "/" && op != "=")
+                    return x;
+                index++;
+                double y = GetDouble(expr, ref index);
+                if (op == "/")
+                    x /= y;
+                else
+                    x *= y;
+            }
+        }
+       private static double GetDouble(char[] expr, ref int index)
+        {
+            string dbl  = "";
+            while(((int)expr[index] >= 48 && (int)expr[index] <=57) || expr[index]== 48)
+            {
+                dbl = dbl + expr[index].ToString();
+                index++;
+                if(index == expr.Length)
+                {
+                    index--;
+                    break;
+                }
+            }
+            return double.Parse(dbl);
+        }
 
     }
 }

@@ -27,7 +27,7 @@ namespace Maths_Formula_App
 
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
-
+            textBox2.Text = MathParser.EvalExpression(textBox1.Text.ToCharArray()).ToString();
         }
     }
 }
