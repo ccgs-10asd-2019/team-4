@@ -18,11 +18,11 @@ namespace Maths_Formula_App
     /// <summary>
     /// Interaction logic for Individual_formula_page_template.xaml
     /// </summary>
-    public partial class Individual_formula_page_template : Page
+    public partial class Exponentials_page : Page
     {
         public EventHandler ladder;
         
-        public Individual_formula_page_template()
+        public Exponentials_page()
         {
             InitializeComponent();
         }
@@ -33,11 +33,6 @@ namespace Maths_Formula_App
             this.Frame.Navigate(new Uri("Page1.xaml", UriKind.Relative));
         }
 
-        private void Quadratic_Formula_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(new Quadratic_Formula_Page());
-            this.Frame.Navigate(new Uri("Quadratic_Formula_Page.xaml", UriKind.Relative));
-        }
 
         private void Help_Button(object sender, RoutedEventArgs e)
         {
@@ -53,6 +48,12 @@ namespace Maths_Formula_App
         {
             Frame.Navigate(new MainPage());
             this.Frame.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
+        }
+
+        private void Parabola_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(new Quadratic_Formula_Page());
+            this.Frame.Navigate(new Uri("Parabolas.xaml", UriKind.Relative));
         }
 
 
