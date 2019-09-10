@@ -37,7 +37,7 @@ namespace Maths_Formula_App
             for (var i = origin_x; i <= ___theCanvas_.Width; i += 1)
             {
                 double y = a * i + b * i + c;
-                //draw a circle
+                
             }
 
 
