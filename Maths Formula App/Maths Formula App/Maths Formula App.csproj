@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mathematical.Expressions">
+      <HintPath>..\..\..\..\Users\1016834\OneDrive - Christ Church Grammar School\Profile\Desktop\Mathematical.Expressions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -55,9 +58,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="algebra_calc.xaml.cs">
+      <DependentUpon>algebra_calc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyMath.cs" />
     <Compile Include="Quadratic_Formula_Page.xaml.cs">
       <DependentUpon>Quadratic_Formula_Page.xaml</DependentUpon>
     </Compile>
+    <Page Include="algebra_calc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Help.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
