@@ -62,6 +62,8 @@ namespace Maths_Formula_App
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
+            Frame.Navigate(new Exponentials_page());
+            this.Frame.Navigate(new Uri("Exponentials_page.xaml", UriKind.Relative));
 
         }
 
