@@ -34,9 +34,9 @@ namespace Maths_Formula_App
             double origin_x = ___theCanvas_.Width / 2;
             double origin_y = ___theCanvas_.Height / 2;
 
-            for (var i = origin_x; i <= ___theCanvas_.Width; i += 1)
+            for (var i = 0; i <= origin_x; i += 1)
             {
-                double y = a * i + b * i + c;
+                double y = (a * (i*i)) + (b * i) + c;
                 
             }
 
@@ -49,6 +49,14 @@ namespace Maths_Formula_App
                 //}
 
 
+
+        }
+
+        private void circle(double x, double y)
+        {
+            Ellipse aCircle = new Ellipse();
+            aCircle.Width = 10;
+            aCircle.Height = 10;
 
         }
 
