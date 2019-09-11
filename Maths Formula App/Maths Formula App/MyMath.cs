@@ -17,7 +17,7 @@ namespace Maths_Formula_App
             double x = parseFactors(expr, ref index);
             while (true)
             {
-                char op = expr[index];
+                string op = expr[index].ToString();
                 if (op != "+" && op != "-")
                     return x;
                 index++;
@@ -33,7 +33,7 @@ namespace Maths_Formula_App
             double x = GetDouble(expr, ref index);
             while (true)
             {
-                char op = expr[index];
+                string op = expr[index].ToString();
                 if (op != "/" && op != "=")
                     return x;
                 index++;
