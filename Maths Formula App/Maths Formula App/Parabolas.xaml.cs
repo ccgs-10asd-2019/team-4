@@ -29,6 +29,8 @@ namespace Maths_Formula_App
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
+            ___theCanvas_.Children.Clear();
+            
             double a = Convert.ToDouble(___inputBoxa__.Text);
             double b = Convert.ToDouble(___inputBoxh__.Text);
             double c = Convert.ToDouble(___inputBoxk__.Text);
