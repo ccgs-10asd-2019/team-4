@@ -34,7 +34,7 @@ namespace Maths_Formula_App
             while (true)
             {
                 string op = expr[index].ToString();
-                if (op != "/" && op != "=")
+                if (op != "/" && op != "*")
                     return x;
                 index++;
                 double y = GetDouble(expr, ref index);
