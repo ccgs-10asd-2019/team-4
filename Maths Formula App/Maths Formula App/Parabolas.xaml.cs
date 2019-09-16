@@ -37,16 +37,28 @@ namespace Maths_Formula_App
             for (var i = 0; i <= origin_x; i += 1)
             {
                 double y = (a * (i*i)) + (b * i) + c;
+
                 
+
+                Ellipse aCircle = new Ellipse();
+                aCircle.Width = 10;
+                aCircle.Height = 10;
+                aCircle.Fill = new SolidColorBrush(Colors.Red);
+                aCircle.Stroke = new SolidColorBrush(Colors.Red);
+
+
+                Canvas.SetLeft(aCircle, origin_x + i);
+                Canvas.SetTop(aCircle, origin_y + y);
+
             }
 
 
             //List<int> nums = new List<int>();
 
-                //for (var i = 0; i <= ___theCanvas_.Width; i += 1)
-                //{
-                //    nums.Add(i);
-                //}
+            //for (var i = 0; i <= ___theCanvas_.Width; i += 1)
+            //{
+            //    nums.Add(i);
+            //}
 
 
 
@@ -57,7 +69,14 @@ namespace Maths_Formula_App
             Ellipse aCircle = new Ellipse();
             aCircle.Width = 10;
             aCircle.Height = 10;
+            aCircle.Fill = new SolidColorBrush(Colors.Red);
+            aCircle.Stroke = new SolidColorBrush(Colors.Red);
 
+            //___theCanvas_.
+            
+
+            
+            
         }
 
         private void back_Click(object sender, RoutedEventArgs e)
