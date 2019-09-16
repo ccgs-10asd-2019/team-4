@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Timers;
 
 namespace Maths_Formula_App
 {
@@ -20,6 +21,7 @@ namespace Maths_Formula_App
     /// </summary>
     public partial class Parabolas : Page
     {
+
         public Parabolas()
         {
             InitializeComponent();
@@ -34,7 +36,7 @@ namespace Maths_Formula_App
             double origin_x = ___theCanvas_.Width / 2;
             double origin_y = ___theCanvas_.Height / 2;
 
-            for (var i = 0; i <= origin_x; i += 1)
+            for (var i = 0; i <= 100; i += 1)
             {
                 double y = (a * (i*i)) + (b * i) + c;
 
@@ -47,18 +49,32 @@ namespace Maths_Formula_App
                 aCircle.Stroke = new SolidColorBrush(Colors.Red);
 
 
+
                 Canvas.SetLeft(aCircle, origin_x + i);
-                Canvas.SetTop(aCircle, origin_y + y);
+                Canvas.SetTop(aCircle, origin_y - y/10);
+
+
+
+
+
+
+
+                Ellipse anotherCircle = new Ellipse();
+                anotherCircle.Width = 10;
+                anotherCircle.Height = 10;
+                anotherCircle.Fill = new SolidColorBrush(Colors.Red);
+                anotherCircle.Stroke = new SolidColorBrush(Colors.Red);
+
+                Canvas.SetLeft(anotherCircle, origin_x - i);//make this work
+                Canvas.SetTop(anotherCircle, origin_y - y/10);
+
+                ___theCanvas_.Children.Add(aCircle);
+                ___theCanvas_.Children.Add(anotherCircle);
 
             }
 
 
-            //List<int> nums = new List<int>();
-
-            //for (var i = 0; i <= ___theCanvas_.Width; i += 1)
-            //{
-            //    nums.Add(i);
-            //}
+            
 
 
 
@@ -72,7 +88,6 @@ namespace Maths_Formula_App
             aCircle.Fill = new SolidColorBrush(Colors.Red);
             aCircle.Stroke = new SolidColorBrush(Colors.Red);
 
-            //___theCanvas_.
             
 
             
@@ -83,7 +98,7 @@ namespace Maths_Formula_App
         {
             Frame.Navigate(new Exponentials_page());
             this.Frame.Navigate(new Uri("Exponentials_page.xaml", UriKind.Relative));
-
+            ___theCanvas_.Children.Clear();
         }
 
         private void help_Click(object sender, RoutedEventArgs e)
