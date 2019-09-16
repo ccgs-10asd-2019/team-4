@@ -18,11 +18,11 @@ namespace Maths_Formula_App
     /// <summary>
     /// Interaction logic for Individual_formula_page_template.xaml
     /// </summary>
-    public partial class Individual_formula_page_template : Page
+    public partial class Exponentials_page : Page
     {
         public EventHandler ladder;
         
-        public Individual_formula_page_template()
+        public Exponentials_page()
         {
             InitializeComponent();
         }
@@ -33,11 +33,6 @@ namespace Maths_Formula_App
             this.Frame.Navigate(new Uri("Page1.xaml", UriKind.Relative));
         }
 
-        private void Quadratic_Formula_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(new Quadratic_Formula_Page());
-            this.Frame.Navigate(new Uri("Quadratic_Formula_Page.xaml", UriKind.Relative));
-        }
 
         private void Help_Button(object sender, RoutedEventArgs e)
         {
@@ -55,9 +50,38 @@ namespace Maths_Formula_App
             this.Frame.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
         }
 
+        private void Parabola_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(new Quadratic_Formula_Page());
+            this.Frame.Navigate(new Uri("Parabolas.xaml", UriKind.Relative));
+        }
 
 
-        
+
+        /* APPARENTLY SOLVES THE QUADRATIC EQUATION. 
+        public static void SolveQuadratic(double a, double b, double c, out double x1, out double x2)
+        {
+            //Quadratic Formula: x = (-b +- sqrt(b^2 - 4ac)) / 2a
+
+            //Calculate the inside of the square root
+            double insideSquareRoot = (b * b) - 4 * a * c;
+
+            if (insideSquareRoot < 0)
+            {
+                //There is no solution
+                x1 = double.NaN;
+                x2 = double.NaN;
+            }
+            else
+            {
+                //Compute the value of each x
+                //if there is only one solution, both x's will be the same
+                double sqrt = Math.Sqrt(insideSquareRoot);
+                x1 = (-b + sqrt) / (2 * a);
+                x2 = (-b - sqrt) / (2 * a);
+            }
+        }
+        */
 
 
     }
