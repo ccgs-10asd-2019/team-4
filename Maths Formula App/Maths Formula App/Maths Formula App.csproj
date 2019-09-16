@@ -55,12 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-
     <Compile Include="Algebracalc.xaml.cs">
       <DependentUpon>Algebracalc.xaml</DependentUpon>
     </Compile>
+    <Compile Include="cubic.xaml.cs">
+      <DependentUpon>cubic.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MyMath.cs" />
-
     <Compile Include="Exponentials_page.xaml.cs">
       <DependentUpon>Exponentials_page.xaml</DependentUpon>
     </Compile>
@@ -70,11 +71,14 @@
     <Compile Include="Parabolas.xaml.cs">
       <DependentUpon>Parabolas.xaml</DependentUpon>
     </Compile>
-
     <Compile Include="Quadratic_Formula_Page.xaml.cs">
       <DependentUpon>Quadratic_Formula_Page.xaml</DependentUpon>
     </Compile>
     <Page Include="Algebracalc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="cubic.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
