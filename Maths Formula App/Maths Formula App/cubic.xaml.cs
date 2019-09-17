@@ -52,14 +52,14 @@ namespace Maths_Formula_App
                 double a = Convert.ToDouble(___inputBoxa__.Text);
                 double b = Convert.ToDouble(___inputBoxh__.Text);
                 double c = Convert.ToDouble(___inputBoxk__.Text);
-
+                double d = Convert.ToDouble(___inputBoxd__.Text);
 
                 double origin_x = ___theCanvas_.Width / 2;
                 double origin_y = ___theCanvas_.Height / 2;
 
                 for (var i = 0; i <= 100; i += 1)
                 {
-                    double y = (a * (i * i * i)) + (b * i) + (100 * c);
+                    double y = (a * (i * i * i)) + (b * i * i) + (c * i) + d;
 
 
 

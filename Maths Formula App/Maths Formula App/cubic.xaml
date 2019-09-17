@@ -28,9 +28,9 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small"/>
         <TextBlock x:Name="___formulaName_" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Cubic" VerticalAlignment="Center" FontSize="36" Height="50" Width="250"/>
-        <TextBox x:Name="___informationBox_" Grid.Column="1" HorizontalAlignment="Left" Height="325" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Text="it's like a parabola, but with x^3 instead of x^2. "/>
+        <TextBox x:Name="___informationBox_" Grid.Column="1" HorizontalAlignment="Left" Height="325" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Text="ax^3 + bx^2 + cx + d"/>
         <TextBox x:Name="___Boxa__" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="a: "/>
-        <Button x:Name="___Button_" Content="Draw" HorizontalAlignment="Left" Margin="10,100,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="buttonClicked" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="___Button_" Content="Draw" HorizontalAlignment="Left" Margin="10,130,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="buttonClicked" Background="#FF223F84" Foreground="White"/>
         <TextBox x:Name="___Boxb__" HorizontalAlignment="Left" Height="25" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="b: "/>
         <TextBox x:Name="___Boxc__" HorizontalAlignment="Left" Height="25" Margin="10,70,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="c: "/>
         <TextBox x:Name="___inputBoxa__" HorizontalAlignment="Left" Height="25" Margin="47,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="54"/>
@@ -39,7 +39,9 @@
         <Button x:Name="Back" Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="101,10,0,0" VerticalAlignment="Top" Width="75" Foreground="White" Background="#FF223F84" Click="back_Click"/>
         <Button x:Name="Help" Content="Help" Grid.Column="1" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="help_Click"/>
         <Canvas x:Name="___theCanvas_" HorizontalAlignment="Left" Height="250" Margin="176,70,0,0" Grid.Row="1" VerticalAlignment="Top" Width="250"/>
-        <Button Content="Clear" HorizontalAlignment="Left" Margin="10,125,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="Clear"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="10,155,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="Clear"/>
+        <TextBox x:Name="___Boxc___Copy" HorizontalAlignment="Left" Height="25" Margin="10,100,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="d: "/>
+        <TextBox x:Name="___inputBoxd__" HorizontalAlignment="Left" Height="25" Margin="47,100,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="54"/>
 
 
 
