@@ -29,7 +29,7 @@ namespace Maths_Formula_App
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
-            ___theCanvas_.Children.Clear();
+            var rColour = RandomColour();
             
             double a = Convert.ToDouble(___inputBoxa__.Text);
             double b = Convert.ToDouble(___inputBoxh__.Text);
@@ -40,34 +40,29 @@ namespace Maths_Formula_App
 
             for (var i = 0; i <= 100; i += 1)
             {
-                double y = (a * (i*i)) + (b * i) + c;
+                double y = (a * (i*i)) + (b * i) + (100*c);
 
                 
 
                 Ellipse aCircle = new Ellipse();
                 aCircle.Width = 10;
                 aCircle.Height = 10;
-                aCircle.Fill = new SolidColorBrush(Colors.Red);
-                aCircle.Stroke = new SolidColorBrush(Colors.Red);
+                aCircle.Fill = new SolidColorBrush(rColour);
+                aCircle.Stroke = new SolidColorBrush(rColour);
 
-
-
+                
                 Canvas.SetLeft(aCircle, origin_x + i);
                 Canvas.SetTop(aCircle, origin_y - y/10);
 
-
-
-
-
-
-
+                
                 Ellipse anotherCircle = new Ellipse();
                 anotherCircle.Width = 10;
                 anotherCircle.Height = 10;
-                anotherCircle.Fill = new SolidColorBrush(Colors.Red);
-                anotherCircle.Stroke = new SolidColorBrush(Colors.Red);
+                anotherCircle.Fill = new SolidColorBrush(rColour);
+                anotherCircle.Stroke = new SolidColorBrush(rColour);
 
-                Canvas.SetLeft(anotherCircle, origin_x - i);//make this work
+
+                Canvas.SetLeft(anotherCircle, origin_x - i);
                 Canvas.SetTop(anotherCircle, origin_y - y/10);
 
                 ___theCanvas_.Children.Add(aCircle);
@@ -89,11 +84,23 @@ namespace Maths_Formula_App
             aCircle.Height = 10;
             aCircle.Fill = new SolidColorBrush(Colors.Red);
             aCircle.Stroke = new SolidColorBrush(Colors.Red);
+                        
+        }
 
-            
+        public Color RandomColour()
+        {
 
-            
-            
+            Random rand = new Random();
+            int max = byte.MaxValue + 1; 
+            byte r = Convert.ToByte(rand.Next(max));
+            byte g = Convert.ToByte(rand.Next(max));
+            byte b = Convert.ToByte(rand.Next(max));
+
+            Color c = Color.FromRgb(r, g, b);
+
+            return c;
+
+
         }
 
         private void back_Click(object sender, RoutedEventArgs e)

@@ -38,7 +38,7 @@ namespace Maths_Formula_App
 
             for (var i = 0; i <= 100; i += 1)
             {
-                double y = (a * (i * i * i)) + (b * i) + c;
+                double y = (a * (i * i * i)) + (b * i) + (100*c);
 
 
 
@@ -74,6 +74,32 @@ namespace Maths_Formula_App
             }
         }
 
+        public Color RandomColour()
+        {
+
+            Random rand = new Random();
+            int max = byte.MaxValue + 1;
+            byte r = Convert.ToByte(rand.Next(max));
+            byte g = Convert.ToByte(rand.Next(max));
+            byte b = Convert.ToByte(rand.Next(max));
+
+            Color c = Color.FromRgb(r, g, b);
+
+            return c;
+
+
+        }
+
+        private void circle(double x, double y)
+        {
+            Ellipse aCircle = new Ellipse();
+            aCircle.Width = 10;
+            aCircle.Height = 10;
+            aCircle.Fill = new SolidColorBrush(Colors.Red);
+            aCircle.Stroke = new SolidColorBrush(Colors.Red);
+
+        }
+
         private void back_Click(object sender, RoutedEventArgs e)
         {
             //Frame.Navigate(new Exponentials_page());
@@ -84,6 +110,11 @@ namespace Maths_Formula_App
         private void help_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Clear(object sender, RoutedEventArgs e)
+        {
+            ___theCanvas_.Children.Clear();
         }
     }
 }
