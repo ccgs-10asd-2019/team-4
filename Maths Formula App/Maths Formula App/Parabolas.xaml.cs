@@ -31,6 +31,28 @@ namespace Maths_Formula_App
         {
             var rColour = RandomColour();
             
+
+
+            if (___inputBoxa__.Text == null)
+            {
+                MessageBox.Show("iooi");
+            }
+
+
+            else if (___inputBoxh__.Text == null)
+            {
+                MessageBox.Show("iooi");
+            }
+
+            else if (___inputBoxk__.Text == null)
+            {
+                MessageBox.Show("iooi");
+            }
+
+            else
+            {
+                
+            }
             double a = Convert.ToDouble(___inputBoxa__.Text);
             double b = Convert.ToDouble(___inputBoxh__.Text);
             double c = Convert.ToDouble(___inputBoxk__.Text);
