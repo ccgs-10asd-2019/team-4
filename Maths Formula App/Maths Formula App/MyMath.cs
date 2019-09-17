@@ -28,13 +28,31 @@ namespace Maths_Formula_App
                     x -= y;
             }
         }
-       private static double parseFactors(char[] expr, ref int index)
+
+        private static double parseSquares(char[] expr, ref int index)
         {
             double x = GetDouble(expr, ref index);
             while (true)
             {
                 string op = expr[index].ToString();
-                if (op != "/" && op != "=")
+                if (op != "^" && op != "[")
+                    return x;
+                index++;
+                double y = GetDouble(expr, ref index);
+                if (op == "^")
+                    x = Math.Pow(x, y);
+                else
+                    x = Math.Sqrt(y);
+            }
+        }
+
+        private static double parseFactors(char[] expr, ref int index)
+        {
+            double x = parseSquares(expr, ref index);
+            while (true)
+            {
+                string op = expr[index].ToString();
+                if (op != "/" && op != "*")
                     return x;
                 index++;
                 double y = GetDouble(expr, ref index);
@@ -44,7 +62,10 @@ namespace Maths_Formula_App
                     x *= y;
             }
         }
-       private static double GetDouble(char[] expr, ref int index)
+
+
+
+        private static double GetDouble(char[] expr, ref int index)
         {
             string dbl  = "";
             while(((int)expr[index] >= 48 && (int)expr[index] <=57) || expr[index]== 48)
