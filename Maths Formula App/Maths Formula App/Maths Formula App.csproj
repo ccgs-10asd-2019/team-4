@@ -55,10 +55,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+
     <Compile Include="Algebracalc.xaml.cs">
       <DependentUpon>Algebracalc.xaml</DependentUpon>
     </Compile>
     <Compile Include="MyMath.cs" />
+
+    <Compile Include="Exponentials_page.xaml.cs">
+      <DependentUpon>Exponentials_page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Parabolas.xaml.cs">
+      <DependentUpon>Parabolas.xaml</DependentUpon>
+    </Compile>
+
     <Compile Include="Quadratic_Formula_Page.xaml.cs">
       <DependentUpon>Quadratic_Formula_Page.xaml</DependentUpon>
     </Compile>
@@ -70,7 +82,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Exponentials_page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Individual_formula_page_template.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -93,6 +113,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Parabolas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,6 +165,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Quadratic Formula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\parabolaTP.jpg" />
+    <Resource Include="Images\parabolaX_ints.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
