@@ -107,5 +107,10 @@ namespace Maths_Formula_App
         {
 
         }
+
+        private void Clear(object sender, RoutedEventArgs e)
+        {
+            ___theCanvas_.Children.Clear();
+        }
     }
 }
