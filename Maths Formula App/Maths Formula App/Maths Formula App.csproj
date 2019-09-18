@@ -61,6 +61,9 @@
     <Compile Include="cubic.xaml.cs">
       <DependentUpon>cubic.xaml</DependentUpon>
     </Compile>
+    <Compile Include="logarithms.xaml.cs">
+      <DependentUpon>logarithms.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MyMath.cs" />
     <Compile Include="Exponentials_page.xaml.cs">
       <DependentUpon>Exponentials_page.xaml</DependentUpon>
@@ -91,6 +94,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Individual_formula_page_template.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="logarithms.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
