@@ -33,18 +33,23 @@ namespace Maths_Formula_App
 
             if (___inputBoxa__.Text == "")
             {
-                MessageBox.Show("enter value");
+                MessageBox.Show("Enter value for a. ");
             }
 
 
             else if (___inputBoxh__.Text == "")
             {
-                MessageBox.Show("enter value");
+                MessageBox.Show("Enter value for b. ");
             }
 
             else if (___inputBoxk__.Text == "")
             {
-                MessageBox.Show("enter value");
+                MessageBox.Show("Enter value for c. ");
+            }
+
+            else if (___inputBoxd__.Text == "")
+            {
+                MessageBox.Show("Enter value for d. ");
             }
 
             else
@@ -56,6 +61,8 @@ namespace Maths_Formula_App
 
                 double origin_x = ___theCanvas_.Width / 2;
                 double origin_y = ___theCanvas_.Height / 2;
+
+                
 
                 for (var i = 0; i <= 100; i += 1)
                 {
@@ -91,49 +98,8 @@ namespace Maths_Formula_App
             }
 
             
-
-
-            //double origin_x = ___theCanvas_.Width / 2;
-            //double origin_y = ___theCanvas_.Height / 2;
-
-            //for (var i = 0; i <= 100; i += 1)
-            //{
-            //    double y = (a * (i * i * i)) + (b * i) + (100 * c);
-
-
-
-            //    Ellipse aCircle = new Ellipse();
-            //    aCircle.Width = 10;
-            //    aCircle.Height = 10;
-            //    aCircle.Fill = new SolidColorBrush(rColour);
-            //    aCircle.Stroke = new SolidColorBrush(rColour);
-
-
-            //    Canvas.SetLeft(aCircle, origin_x + i);
-            //    Canvas.SetTop(aCircle, origin_y - y / 10);
-
-
-            //    Ellipse anotherCircle = new Ellipse();
-            //    anotherCircle.Width = 10;
-            //    anotherCircle.Height = 10;
-            //    anotherCircle.Fill = new SolidColorBrush(rColour);
-            //    anotherCircle.Stroke = new SolidColorBrush(rColour);
-
-
-            //    Canvas.SetLeft(anotherCircle, origin_x - i);
-            //    Canvas.SetTop(anotherCircle, origin_y - y / 10);
-
-            //    ___theCanvas_.Children.Add(aCircle);
-            //    ___theCanvas_.Children.Add(anotherCircle);
-
-            //}
-
-
-
-
-
-
         }
+
 
         private void circle(double x, double y)
         {
@@ -144,6 +110,7 @@ namespace Maths_Formula_App
             aCircle.Stroke = new SolidColorBrush(Colors.Red);
 
         }
+
 
         public Color RandomColour()
         {
@@ -157,9 +124,9 @@ namespace Maths_Formula_App
             Color c = Color.FromRgb(r, g, b);
 
             return c;
-
-
+            
         }
+
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
@@ -168,10 +135,12 @@ namespace Maths_Formula_App
             //___theCanvas_.Children.Clear();
         }
 
+
         private void help_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
 
         private void Clear(object sender, RoutedEventArgs e)
         {
