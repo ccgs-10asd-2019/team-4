@@ -29,11 +29,20 @@ namespace Maths_Formula_App
         {
             double a = Convert.ToDouble(___inputBoxa__.Text);
             double b = Convert.ToDouble(___inputBoxb__.Text);
-            double c = Convert.ToDouble(___inputBoxc__.Text);
 
-            double power = Math.Log(a, b);
+            double power = Math.Log(b, a);
 
             ___endProductBox_.Text = Convert.ToString(power);
+
+        }
+
+        private void backClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void helpClick(object sender, RoutedEventArgs e)
+        {
 
         }
     }
