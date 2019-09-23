@@ -55,10 +55,10 @@ namespace Maths_Formula_App
             this.Frame.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
         }
 
-
-
-        
-
-
+        private void New_Calc(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(new Algebracalc());
+            this.Frame.Navigate(new Uri("Algebracalc.xaml", UriKind.Relative));
+        }
     }
 }

@@ -24,11 +24,16 @@ namespace Maths_Formula_App
         {
             InitializeComponent();
         }
-
+    
         private void btnCalculate_Click(object sender, RoutedEventArgs e)
         {
             Console.WriteLine(textBox1.Text.ToCharArray());
             textBox2.Text = MyMath.EvalExpression(textBox1.Text.ToCharArray()).ToString();
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
