@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Timers;
+using System.IO;
 
 namespace Maths_Formula_App
 {
@@ -140,6 +141,13 @@ namespace Maths_Formula_App
         private void Clear(object sender, RoutedEventArgs e)
         {
             ___theCanvas_.Children.Clear();
+        }
+
+        private void ___create_file__Click(object sender, RoutedEventArgs e)
+        {
+            StreamWriter File = new StreamWriter("Test");//puts the file in the bin, (file)
+            File.Write("this is a file");
+            File.Close();
         }
     }
 }
