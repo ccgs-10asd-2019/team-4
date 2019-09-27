@@ -145,9 +145,16 @@ namespace Maths_Formula_App
 
         private void ___create_file__Click(object sender, RoutedEventArgs e)
         {
-            StreamWriter File = new StreamWriter("Test");//puts the file in the bin, (file)
-            File.Write("this is a file");
+            StreamWriter File = new StreamWriter("ParabolaInfo.txt");//puts the file in the bin, debug. 
+            File.Write(___informationBox_.Text);
             File.Close();
+        }
+
+        
+        private void ___FillButtonClick_(object sender, RoutedEventArgs e)
+        {
+            var text = File.ReadAllText("ParabolaInfo.txt");
+            ___informationBox_.Text = text;
         }
     }
 }
