@@ -31,21 +31,16 @@ namespace Maths_Formula_App
         public static Tuple<double, double> SolveQuadratic(double a, double b, double c)
         {
 
-            //There is no solution. 
-            //if the re are no real solutions, but 2 complex solutions that i am not going to code. 
-            //if the root is 0, then there is one solution, and if it bigger than zero then there are 2 solutions.
+            
             double x1 = 0;
             double x2 = 0;
 
-            //Quadratic Formula: x = (-b +- sqrt(b^2 - 4ac)) / 2a
-
-            //Calculate the inside of the square root. 
+             
             double insideSquareRoot = (b * b) - 4 * a * c;
 
             if (insideSquareRoot >= 0)
             {
-                //Compute the value of each x. 
-                //if there is only one solution, both x's will be the same. 
+                 
                 double sqrt = Math.Sqrt(insideSquareRoot);
                 x1 = (-b + sqrt) / (2 * a);
                 x2 = (-b - sqrt) / (2 * a);
