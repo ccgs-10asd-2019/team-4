@@ -32,7 +32,7 @@ namespace Maths_Formula_App
         {
 
             //There is no solution. 
-            //if the re are no real solutions, but 2 complex solutions that i am not going to code. 
+            //if the re are no real solutions, but 2 complex solutions that I am not going to code. 
             //if the root is 0, then there is one solution, and if it bigger than zero then there are 2 solutions.
             double x1 = 0;
             double x2 = 0;

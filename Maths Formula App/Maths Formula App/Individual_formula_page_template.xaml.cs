@@ -60,5 +60,11 @@ namespace Maths_Formula_App
             Frame.Navigate(new Algebracalc());
             this.Frame.Navigate(new Uri("Algebracalc.xaml", UriKind.Relative));
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(new logarithms());
+            this.Frame.Navigate(new Uri("logarithms.xaml", UriKind.Relative));
+        }
     }
 }

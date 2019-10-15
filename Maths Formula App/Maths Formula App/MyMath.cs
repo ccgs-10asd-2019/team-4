@@ -63,7 +63,24 @@ namespace Maths_Formula_App
             }
         }
 
-
+        private static double parseTrignometricRatios(char[] expr, int index)
+        {
+            double x = parseSquares(expr, ref index);
+            while (true)
+            {
+                string op = expr[index].ToString();
+                if (op != "s" && op != "c" && op !="t")
+                    return x;
+                index++;
+                double y = GetDouble(expr, ref index);
+                if (op == "s")
+                    x = Math.Sin(y);
+                if (op == "c")
+                    x = Math.Cos(y);
+                else
+                    x = Math.Tan(y);
+            }
+        }
 
         private static double GetDouble(char[] expr, ref int index)
         {
