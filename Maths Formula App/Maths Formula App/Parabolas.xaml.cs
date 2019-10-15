@@ -153,7 +153,7 @@ namespace Maths_Formula_App
         
         private void ___FillButtonClick_(object sender, RoutedEventArgs e)
         {
-            var text = File.ReadAllText("ParabolaInfo.txt");
+            var text = File.ReadAllText("ParabolaInfo.txt");//retreives the file from bin, debug. 
             ___informationBox_.Text = text;
         }
     }

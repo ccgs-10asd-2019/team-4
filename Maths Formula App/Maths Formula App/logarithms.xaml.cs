@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Maths_Formula_App
 {
@@ -44,6 +45,20 @@ namespace Maths_Formula_App
         private void helpClick(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ___create_file__Click(object sender, RoutedEventArgs e)
+        {
+            StreamWriter File = new StreamWriter("LogarithmInfo.txt");//puts the file in the bin, debug. 
+            File.Write(___informationBox_.Text);
+            File.Close();
+        }
+
+
+        private void ___FillButtonClick_(object sender, RoutedEventArgs e)
+        {
+            var text = File.ReadAllText("LogarithmInfo.txt");//retreives the file from bin, debug. 
+            ___informationBox_.Text = text;
         }
     }
 }
