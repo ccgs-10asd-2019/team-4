@@ -69,7 +69,7 @@ namespace Maths_Formula_App
             while (true)
             {
                 string op = expr[index].ToString();
-                if (op != "s" && op != "c" && op !="t")
+                if (op != "s(" && op != "c(" && op !="t(")
                     return x;
                 index++;
                 double y = GetDouble(expr, ref index);
