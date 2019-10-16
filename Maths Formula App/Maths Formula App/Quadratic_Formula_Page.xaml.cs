@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Maths_Formula_App
 {
@@ -66,6 +67,18 @@ namespace Maths_Formula_App
         {
 
         }
-        
+
+        private void ___FillButtonClick_(object sender, RoutedEventArgs e)
+        {
+            var text = File.ReadAllText("QuadraticInfo.txt");
+            ___informationBox_.Text = text;
+        }
+
+        private void ___create_file__Click(object sender, RoutedEventArgs e)
+        {
+            StreamWriter File = new StreamWriter("QuadraticInfo.txt");//puts the file in the bin, debug. 
+            File.Write(___informationBox_.Text);
+            File.Close();
+        }
     }
 }
