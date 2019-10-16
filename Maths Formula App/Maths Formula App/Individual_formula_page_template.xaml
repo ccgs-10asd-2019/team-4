@@ -40,6 +40,7 @@
             <Button Content="Standard Calculator" HorizontalAlignment="Left" Margin="10,238,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="Calculator" Height="100" Grid.ColumnSpan="2"/>
             <Button x:Name="Quadratic_Formula" Content="Quadratic Formula" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="Quadratic_Formula_Click" Grid.ColumnSpan="2"/>
             <Button Content="Test calculator" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="81,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="180" Click="New_Calc"/>
+            <Button Grid.ColumnSpan="2" Content="Logarithms" Grid.Column="1" HorizontalAlignment="Left" Height="97" Margin="279,13,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195" Click="Button_Click"/>
         </Grid>
     </StackPanel>
 </Page>

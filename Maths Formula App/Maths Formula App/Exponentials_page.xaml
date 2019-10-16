@@ -39,6 +39,7 @@
 
             <Button Content="Standard Calculator" HorizontalAlignment="Left" Margin="10,238,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="Calculator" Height="100" Grid.ColumnSpan="2"/>
             <Button x:Name="Quadratic_Formula" Content="Parabola" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="Parabola_Click" Grid.ColumnSpan="2"/>
+            <Button Content="Cubic" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="97,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" Click="Button_Click"/>
         </Grid>
     </StackPanel>
 </Page>
