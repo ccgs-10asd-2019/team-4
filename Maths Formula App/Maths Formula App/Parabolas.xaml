@@ -46,7 +46,7 @@
             <Canvas x:Name="___theCanvas_" HorizontalAlignment="Left" Height="250" Margin="176,70,0,0" Grid.Row="1" VerticalAlignment="Top" Width="250"/>
             <Button Content="Clear" HorizontalAlignment="Left" Margin="10,125,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="Clear"/>
             <Button x:Name="___create_file_" Content="Save" HorizontalAlignment="Left" Margin="216,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="___create_file__Click" Grid.Column="1" Background="#FFF5F4FF"/>
-            <Button x:Name="___fillButton_" Content="Fill" HorizontalAlignment="Left" Margin="136,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="___FillButtonClick_" Grid.Column="1" Background="#FFF5F4FF"/>
+            <Button x:Name="___fillButton_" Content="Import" HorizontalAlignment="Left" Margin="136,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="___FillButtonClick_" Grid.Column="1" Background="#FFF5F4FF"/>
 
 
 
