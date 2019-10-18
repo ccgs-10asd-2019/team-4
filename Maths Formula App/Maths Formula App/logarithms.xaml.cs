@@ -28,12 +28,26 @@ namespace Maths_Formula_App
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
-            double a = Convert.ToDouble(___inputBoxa__.Text);
-            double b = Convert.ToDouble(___inputBoxb__.Text);
+            if (___inputBoxa__.Text == "")
+            {
+                MessageBox.Show("Enter value for a. ");
+            }
 
-            double power = Math.Log(b, a);
 
-            ___endProductBox_.Text = Convert.ToString(power);
+            else if (___inputBoxb__.Text == "")
+            {
+                MessageBox.Show("Enter value for b. ");
+            }
+            else
+            {
+                double a = Convert.ToDouble(___inputBoxa__.Text);
+                double b = Convert.ToDouble(___inputBoxb__.Text);
+
+                double power = Math.Log(b, a);
+
+                ___endProductBox_.Text = Convert.ToString(power);
+            }
+            
 
         }
 

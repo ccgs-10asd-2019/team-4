@@ -34,18 +34,18 @@ namespace Maths_Formula_App
             
 
 
-            if (___inputBoxa__.Text == null)
+            if (___inputBoxa__.Text == "")
             {
                 MessageBox.Show("iooi");
             }
 
 
-            else if (___inputBoxh__.Text == null)
+            else if (___inputBoxh__.Text == "")
             {
                 MessageBox.Show("iooi");
             }
 
-            else if (___inputBoxk__.Text == null)
+            else if (___inputBoxk__.Text == "")
             {
                 MessageBox.Show("iooi");
             }
@@ -53,48 +53,48 @@ namespace Maths_Formula_App
             else
             {
                 
-            }
-            double a = Convert.ToDouble(___inputBoxa__.Text);
-            double b = Convert.ToDouble(___inputBoxh__.Text);
-            double c = Convert.ToDouble(___inputBoxk__.Text);
-
-            double origin_x = ___theCanvas_.Width / 2;
-            double origin_y = ___theCanvas_.Height / 2;
-
-            for (var i = 0; i <= 100; i += 1)
-            {
-                double y = (a * (i*i)) + (b * i) + (100*c);
-
-                
-
-                Ellipse aCircle = new Ellipse();
-                aCircle.Width = 10;
-                aCircle.Height = 10;
-                aCircle.Fill = new SolidColorBrush(rColour);
-                aCircle.Stroke = new SolidColorBrush(rColour);
-
-                
-                Canvas.SetLeft(aCircle, origin_x + i);
-                Canvas.SetTop(aCircle, origin_y - y/10);
-
-                
-                Ellipse anotherCircle = new Ellipse();
-                anotherCircle.Width = 10;
-                anotherCircle.Height = 10;
-                anotherCircle.Fill = new SolidColorBrush(rColour);
-                anotherCircle.Stroke = new SolidColorBrush(rColour);
-
-
-                Canvas.SetLeft(anotherCircle, origin_x - i);
-                Canvas.SetTop(anotherCircle, origin_y - y/10);
-
-                ___theCanvas_.Children.Add(aCircle);
-                ___theCanvas_.Children.Add(anotherCircle);
-
-            }
-
-
             
+                double a = Convert.ToDouble(___inputBoxa__.Text);
+                double b = Convert.ToDouble(___inputBoxh__.Text);
+                double c = Convert.ToDouble(___inputBoxk__.Text);
+
+                double origin_x = ___theCanvas_.Width / 2;
+                double origin_y = ___theCanvas_.Height / 2;
+
+                for (var i = 0; i <= 100; i += 1)
+                {
+                    double y = (a * (i*i)) + (b * i) + (100*c);
+
+                
+
+                    Ellipse aCircle = new Ellipse();
+                    aCircle.Width = 10;
+                    aCircle.Height = 10;
+                    aCircle.Fill = new SolidColorBrush(rColour);
+                    aCircle.Stroke = new SolidColorBrush(rColour);
+
+                
+                    Canvas.SetLeft(aCircle, origin_x + i);
+                    Canvas.SetTop(aCircle, origin_y - y/10);
+
+                
+                    Ellipse anotherCircle = new Ellipse();
+                    anotherCircle.Width = 10;
+                    anotherCircle.Height = 10;
+                    anotherCircle.Fill = new SolidColorBrush(rColour);
+                    anotherCircle.Stroke = new SolidColorBrush(rColour);
+
+
+                    Canvas.SetLeft(anotherCircle, origin_x - i);
+                    Canvas.SetTop(anotherCircle, origin_y - y/10);
+
+                    ___theCanvas_.Children.Add(aCircle);
+                    ___theCanvas_.Children.Add(anotherCircle);
+
+                }
+
+            }
+
 
 
 
