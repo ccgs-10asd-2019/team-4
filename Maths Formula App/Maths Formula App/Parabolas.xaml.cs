@@ -26,6 +26,9 @@ namespace Maths_Formula_App
         public Parabolas()
         {
             InitializeComponent();
+
+            var text = File.ReadAllText("ParabolaInfo.txt");//retreives the file from bin, debug. 
+            ___informationBox_.Text = text;
         }
 
         private void buttonClicked(object sender, RoutedEventArgs e)
