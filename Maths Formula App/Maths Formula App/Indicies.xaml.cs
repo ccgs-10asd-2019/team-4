@@ -38,8 +38,8 @@ namespace Maths_Formula_App
 
         private void backClick(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(new Individual_formula_page_template());
-            this.Frame.Navigate(new Uri("IndecesSection.xaml", UriKind.Relative));//change this to an indices page. 
+            Frame.Navigate(new IndecesSection());
+            this.Frame.Navigate(new Uri("IndecesSection.xaml", UriKind.Relative));
         }
 
         private void helpClick(object sender, RoutedEventArgs e)
