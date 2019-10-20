@@ -28,12 +28,28 @@ namespace Maths_Formula_App
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
-            double basee = Convert.ToDouble(___inputBoxa__.Text);
-            double power = Convert.ToDouble(___inputBoxb__.Text);
+            if (___inputBoxa__.Text == "")
+            {
+                MessageBox.Show("input something. ");
+            }
 
-            double product = Math.Pow(basee, power);
 
-            ___endProductBox_.Text = Convert.ToString(product);
+            else if (___inputBoxb__.Text == "")
+            {
+                MessageBox.Show("input something. ");
+            }
+
+            
+            else
+            {
+
+                double basee = Convert.ToDouble(___inputBoxa__.Text);
+                double power = Convert.ToDouble(___inputBoxb__.Text);
+
+                double product = Math.Pow(basee, power);
+
+                ___endProductBox_.Text = Convert.ToString(product);
+            }
         }
 
         private void backClick(object sender, RoutedEventArgs e)

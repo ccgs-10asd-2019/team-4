@@ -39,18 +39,18 @@ namespace Maths_Formula_App
 
             if (___inputBoxa__.Text == "")
             {
-                MessageBox.Show("iooi");
+                MessageBox.Show("Input something. ");
             }
 
 
             else if (___inputBoxh__.Text == "")
             {
-                MessageBox.Show("iooi");
+                MessageBox.Show("Input something. ");
             }
 
             else if (___inputBoxk__.Text == "")
             {
-                MessageBox.Show("iooi");
+                MessageBox.Show("Input something. ");
             }
 
             else

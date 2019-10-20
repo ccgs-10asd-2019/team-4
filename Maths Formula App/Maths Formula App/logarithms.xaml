@@ -59,15 +59,15 @@ THE LOG LAWS:
 The log laws. 
 
 log law 1:
-
+log A + log B = log AB
 
 log law 2:
-
+log A - log B = log A/B
 
 log law 3: 
+log A^n = n log A
 
 
-log law 4:
 
 &#xD;"/>
         <Button x:Name="___create_file_" Content="Save" HorizontalAlignment="Left" Margin="216,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="___create_file__Click" Grid.Column="1" Background="#FFF5F4FF"/>
