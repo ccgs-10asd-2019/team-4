@@ -23,6 +23,9 @@ namespace Maths_Formula_App
         public MainPage()
         {
             InitializeComponent();
+            this.WindowHeight = System.Windows.SystemParameters.MaximizedPrimaryScreenHeight;
+
+            this.WindowWidth = System.Windows.SystemParameters.MaximizedPrimaryScreenWidth;
         }
 
         private void Help_Click(object sender, RoutedEventArgs e)
