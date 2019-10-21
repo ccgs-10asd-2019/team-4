@@ -77,8 +77,8 @@ namespace Maths_Formula_App
 
         private void ___FillButtonClick_(object sender, RoutedEventArgs e)
         {
-            var text = File.ReadAllText("LogarithmInfo.txt");//retreives the file from bin, debug. 
-            ___informationBox_.Text = text;
+            ___informationBox_.Text = File.ReadAllText("LogarithmInfo.txt");//retreives the file from bin, debug. 
+            
         }
     }
 }

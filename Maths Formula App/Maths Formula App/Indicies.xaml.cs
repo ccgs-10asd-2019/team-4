@@ -24,6 +24,9 @@ namespace Maths_Formula_App
         public Indicies()
         {
             InitializeComponent();
+
+            var text = File.ReadAllText("IndicesInfo.txt");
+            ___informationBox_.Text = text;
         }
 
         private void buttonClicked(object sender, RoutedEventArgs e)
