@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Maths_Formula_App
 {
     /// <summary>
@@ -34,6 +35,12 @@ namespace Maths_Formula_App
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void ___backButton__Click(object sender, RoutedEventArgs e)
+        {
+            //Frame.Navigate(new IndecesSection());
+            //this.Frame.Navigate(new Uri("IndecesSection.xaml", UriKind.Relative)); THIS MAKES ERRORS. 
         }
     }
 }

@@ -50,17 +50,19 @@ namespace Maths_Formula_App
             this.Frame.Navigate(new Uri("MainPage.xaml", UriKind.Relative));
         }
 
-        private void Parabola_Click(object sender, RoutedEventArgs e)
+        private void CubicClick(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(new Quadratic_Formula_Page());
-            this.Frame.Navigate(new Uri("Parabolas.xaml", UriKind.Relative));
+        //    Frame.Navigate(new cubic());
+        //    this.Frame.Navigate(new Uri("cubic.xaml", UriKind.Relative));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(new cubic());
-            this.Frame.Navigate(new Uri("cubic.xaml", UriKind.Relative));
+            this.Frame.Navigate(new Uri("Parabolas.xaml", UriKind.Relative));
         }
+
+
 
 
 
