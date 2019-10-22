@@ -39,8 +39,8 @@ namespace Maths_Formula_App
 
         private void ___backButton__Click(object sender, RoutedEventArgs e)
         {
-            //Frame.Navigate(new IndecesSection());
-            //this.Frame.Navigate(new Uri("IndecesSection.xaml", UriKind.Relative)); THIS MAKES ERRORS. 
+            Frame.Navigate(new IndecesSection());
+            this.Frame.Navigate(new Uri("Individual_formula_page_template.xaml", UriKind.Relative)); 
         }
     }
 }

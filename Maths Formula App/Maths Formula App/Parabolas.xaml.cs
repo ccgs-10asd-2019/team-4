@@ -131,6 +131,10 @@ namespace Maths_Formula_App
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
+            StreamWriter File = new StreamWriter("ParabolaInfo.txt");//puts the file in the bin, debug. 
+            File.Write(___informationBox_.Text);
+            File.Close();
+
             Frame.Navigate(new Exponentials_page());
             this.Frame.Navigate(new Uri("Exponentials_page.xaml", UriKind.Relative));
             ___theCanvas_.Children.Clear();

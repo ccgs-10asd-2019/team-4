@@ -57,6 +57,10 @@ namespace Maths_Formula_App
 
         private void backClick(object sender, RoutedEventArgs e)
         {
+            StreamWriter File = new StreamWriter("IndicesInfo.txt");//puts the file in the bin, debug. 
+            File.Write(___informationBox_.Text);
+            File.Close();
+
             Frame.Navigate(new IndecesSection());
             this.Frame.Navigate(new Uri("IndecesSection.xaml", UriKind.Relative));
         }
