@@ -61,6 +61,9 @@
     <Compile Include="cubic.xaml.cs">
       <DependentUpon>cubic.xaml</DependentUpon>
     </Compile>
+    <Compile Include="geometry.xaml.cs">
+      <DependentUpon>geometry.xaml</DependentUpon>
+    </Compile>
     <Compile Include="IndecesSection.xaml.cs">
       <DependentUpon>IndecesSection.xaml</DependentUpon>
     </Compile>
@@ -83,11 +86,18 @@
     <Compile Include="Quadratic_Formula_Page.xaml.cs">
       <DependentUpon>Quadratic_Formula_Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SinCosTan.xaml.cs">
+      <DependentUpon>SinCosTan.xaml</DependentUpon>
+    </Compile>
     <Page Include="Algebracalc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="cubic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="geometry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,6 +156,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Quadratic_Formula_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SinCosTan.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

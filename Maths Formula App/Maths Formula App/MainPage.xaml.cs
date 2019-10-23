@@ -48,7 +48,8 @@ namespace Maths_Formula_App
 
         private void Geo_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(new geometry());
+            this.Frame.Navigate(new Uri("geometry.xaml", UriKind.Relative));
         }
 
         private void Personal_Click(object sender, RoutedEventArgs e)
