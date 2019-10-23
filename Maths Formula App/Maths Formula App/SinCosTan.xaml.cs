@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 
+
 namespace Maths_Formula_App
 {
     /// <summary>
@@ -26,25 +27,11 @@ namespace Maths_Formula_App
             InitializeComponent();
         }
 
-        private void buttonClicked(object sender, RoutedEventArgs e)
-        {
-            if (___inputBoxa__.Text == "")
-            {
-                MessageBox.Show("Enter value for a. ");
-            }
+        
 
+        
 
-            else if (___inputBoxb__.Text == "")
-            {
-                MessageBox.Show("Enter value for b. ");
-            }
-            else
-            {
-                
-            }
-        }
-
-        private void backClick(object sender, RoutedEventArgs e)
+    private void backClick(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(new geometry());
             this.Frame.Navigate(new Uri("geometry.xaml", UriKind.Relative));
@@ -68,6 +55,69 @@ namespace Maths_Formula_App
         private void ___FillButtonClick_(object sender, RoutedEventArgs e)
         {
             ___informationBox_.Text = File.ReadAllText("SinCosTanInfo.txt");
+        }
+
+
+        private void Sine(object sender, RoutedEventArgs e)
+        {
+            if (___inputBoxa__.Text == "")
+            {
+                MessageBox.Show("Enter value for a. ");
+            }
+
+
+            else if (___inputBoxb__.Text == "")
+            {
+                MessageBox.Show("Enter value for b. ");
+            }
+
+            else
+            {
+                double x = Convert.ToDouble(___inputBoxa__.Text) / Convert.ToDouble(___inputBoxb__.Text);
+                ___endProductBox_.Text = Convert.ToString(Math.Sin(x));
+            }
+        }
+
+        
+
+        private void CosButton(object sender, RoutedEventArgs e)
+        {
+            if (___inputBoxa___Copy.Text == "")
+            {
+                MessageBox.Show("Enter value for a. ");
+            }
+
+
+            else if (___inputBoxb___Copy.Text == "")
+            {
+                MessageBox.Show("Enter value for b. ");
+            }
+
+            else
+            {
+                double x = Convert.ToDouble(___inputBoxa__.Text) / Convert.ToDouble(___inputBoxb__.Text);
+                ___endProductBox__Copy.Text = Convert.ToString(Math.Cos(x));
+            }
+        }
+
+        private void TanButton(object sender, RoutedEventArgs e)
+        {
+            if (___inputBoxa___Copy1.Text == "")
+            {
+                MessageBox.Show("Enter value for a. ");
+            }
+
+
+            else if (___inputBoxb___Copy1.Text == "")
+            {
+                MessageBox.Show("Enter value for b. ");
+            }
+
+            else
+            {
+                double x = Convert.ToDouble(___inputBoxa__.Text) / Convert.ToDouble(___inputBoxb__.Text);
+                ___endProductBox__Copy1.Text = Convert.ToString(Math.Tan(x));
+            }
         }
     }
 }
