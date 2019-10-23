@@ -68,8 +68,8 @@ namespace Maths_Formula_App
                 
 
                     Ellipse aCircle = new Ellipse();
-                    aCircle.Width = 10;
-                    aCircle.Height = 10;
+                    aCircle.Width = 5;
+                    aCircle.Height = 5;
                     aCircle.Fill = new SolidColorBrush(rColour);
                     aCircle.Stroke = new SolidColorBrush(rColour);
 
@@ -79,8 +79,8 @@ namespace Maths_Formula_App
 
                 
                     Ellipse anotherCircle = new Ellipse();
-                    anotherCircle.Width = 10;
-                    anotherCircle.Height = 10;
+                    anotherCircle.Width = 5;
+                    anotherCircle.Height = 5;
                     anotherCircle.Fill = new SolidColorBrush(rColour);
                     anotherCircle.Stroke = new SolidColorBrush(rColour);
 
@@ -94,10 +94,6 @@ namespace Maths_Formula_App
                 }
 
             }
-
-
-
-
         }
 
         private void circle(double x, double y)

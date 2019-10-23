@@ -73,12 +73,12 @@ namespace Maths_Formula_App
                     return x;
                 index++;
                 double y = GetDouble(expr, ref index);
-                if (op == "s")
-                    x = Math.Sin(y);
-                if (op == "c")
-                    x = Math.Cos(y);
+                if (op == "s(")
+                    x = Math.Sin(x);
+                if (op == "c(")
+                    x = Math.Cos(x);
                 else
-                    x = Math.Tan(y);
+                    x = Math.Tan(x);
             }
         }
 

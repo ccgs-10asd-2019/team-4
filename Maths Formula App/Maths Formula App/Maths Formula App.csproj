@@ -201,5 +201,8 @@
   <ItemGroup>
     <Resource Include="Images\Grid.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Cartesian Plane.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
