@@ -83,6 +83,9 @@
     <Compile Include="Parabolas.xaml.cs">
       <DependentUpon>Parabolas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pythag.xaml.cs">
+      <DependentUpon>Pythag.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Quadratic_Formula_Page.xaml.cs">
       <DependentUpon>Quadratic_Formula_Page.xaml</DependentUpon>
     </Compile>
@@ -152,6 +155,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Parabolas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pythag.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

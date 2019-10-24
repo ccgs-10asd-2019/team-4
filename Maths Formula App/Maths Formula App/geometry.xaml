@@ -35,12 +35,12 @@
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
             <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small" Height="25" Width="140"/>
-            <TextBlock HorizontalAlignment="Left" Margin="20,15,0,10" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Height="50" Width="250" Grid.Column="1" Text="Geometry"/>
+            <TextBlock HorizontalAlignment="Left" Margin="20,15,0,10" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Height="50" Width="454" Grid.Column="1" Text="Geometry/Trigonometry" Grid.ColumnSpan="2"/>
             <Button x:Name="Help" Content="Help" Grid.Column="2" HorizontalAlignment="Left" Height="31" Margin="170,15,0,0" VerticalAlignment="Top" Width="103" Foreground="White" Background="#FF223F84" Click="Help_Button"/>
             <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="29,15,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="Home_Return"/>
             <Button x:Name="SCTbutton" Content="Sin Cos Tan" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="SCTclick" Grid.ColumnSpan="2"/>
             <Button Content="Test calculator" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="81,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="180" Click="New_Calc"/>
-            <Button Grid.ColumnSpan="2" Content="Empty" Grid.Column="1" HorizontalAlignment="Left" Height="97" Margin="279,13,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195"/>
+            <Button Grid.ColumnSpan="2" Content="Pythagoras's Theorum" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="279,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="195" Click="Button_Click"/>
         </Grid>
     </StackPanel>
 </Page>
