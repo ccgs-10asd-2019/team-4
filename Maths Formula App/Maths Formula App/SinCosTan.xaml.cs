@@ -74,7 +74,7 @@ namespace Maths_Formula_App
             else
             {
                 double x = Convert.ToDouble(___inputBoxa__.Text) / Convert.ToDouble(___inputBoxb__.Text);
-                ___endProductBox_.Text = Convert.ToString(Math.Sin(x));
+                ___endProductBox_.Text = Convert.ToString(Math.Sin(Math.PI / 180 * x));
             }
         }
 
@@ -96,9 +96,11 @@ namespace Maths_Formula_App
             else
             {
                 double x = Convert.ToDouble(___inputBoxa__.Text) / Convert.ToDouble(___inputBoxb__.Text);
-                ___endProductBox__Copy.Text = Convert.ToString(Math.Cos(x));
+                ___endProductBox__Copy.Text = Convert.ToString(Math.Cos(Math.PI / 180 * x));
             }
         }
+
+
 
         private void TanButton(object sender, RoutedEventArgs e)
         {
@@ -116,7 +118,7 @@ namespace Maths_Formula_App
             else
             {
                 double x = Convert.ToDouble(___inputBoxa__.Text) / Convert.ToDouble(___inputBoxb__.Text);
-                ___endProductBox__Copy1.Text = Convert.ToString(Math.Tan(x));
+                ___endProductBox__Copy1.Text = Convert.ToString(Math.Tan(Math.PI / 180 * x));
             }
         }
     }
