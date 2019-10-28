@@ -62,13 +62,13 @@ namespace Maths_Formula_App
         {
             if (___inputBoxa__.Text == "")
             {
-                MessageBox.Show("Enter value for a. ");
+                MessageBox.Show("Enter value for opposite side to angle. ");
             }
 
 
             else if (___inputBoxb__.Text == "")
             {
-                MessageBox.Show("Enter value for b. ");
+                MessageBox.Show("Enter value for hypotenuse. ");
             }
 
             else
@@ -84,18 +84,18 @@ namespace Maths_Formula_App
         {
             if (___inputBoxa___Copy.Text == "")
             {
-                MessageBox.Show("Enter value for a. ");
+                MessageBox.Show("Enter value for adjacent. ");
             }
 
 
             else if (___inputBoxb___Copy.Text == "")
             {
-                MessageBox.Show("Enter value for b. ");
+                MessageBox.Show("Enter value for hypotenuse. ");
             }
 
             else
             {
-                double x = Convert.ToDouble(___inputBoxa__.Text) / Convert.ToDouble(___inputBoxb__.Text);
+                double x = Convert.ToDouble(___inputBoxa___Copy.Text) / Convert.ToDouble(___inputBoxb___Copy.Text);
                 ___endProductBox__Copy.Text = Convert.ToString(Math.Cos(Math.PI / 180 * x));
             }
         }
@@ -106,13 +106,13 @@ namespace Maths_Formula_App
         {
             if (___inputBoxa___Copy1.Text == "")
             {
-                MessageBox.Show("Enter value for a. ");
+                MessageBox.Show("Enter value for opposite. ");
             }
 
 
             else if (___inputBoxb___Copy1.Text == "")
             {
-                MessageBox.Show("Enter value for b. ");
+                MessageBox.Show("Enter value for adjacent. ");
             }
 
             else
