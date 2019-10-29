@@ -55,5 +55,10 @@ namespace Maths_Formula_App
             this.Frame.Navigate(new Uri("SinCosTan.xaml", UriKind.Relative));
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(new Pythag());
+            this.Frame.Navigate(new Uri("Pythag.xaml", UriKind.Relative));
+        }
     }
 }

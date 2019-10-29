@@ -62,19 +62,19 @@ namespace Maths_Formula_App
         {
             if (___inputBoxa__.Text == "")
             {
-                MessageBox.Show("Enter value for a. ");
+                MessageBox.Show("Enter value for opposite side to angle. ");
             }
 
 
             else if (___inputBoxb__.Text == "")
             {
-                MessageBox.Show("Enter value for b. ");
+                MessageBox.Show("Enter value for hypotenuse. ");
             }
 
             else
             {
                 double x = Convert.ToDouble(___inputBoxa__.Text) / Convert.ToDouble(___inputBoxb__.Text);
-                ___endProductBox_.Text = Convert.ToString(Math.Sin(x));
+                ___endProductBox_.Text = Convert.ToString(Math.Sin(Math.PI / 180 * x));
             }
         }
 
@@ -84,39 +84,41 @@ namespace Maths_Formula_App
         {
             if (___inputBoxa___Copy.Text == "")
             {
-                MessageBox.Show("Enter value for a. ");
+                MessageBox.Show("Enter value for adjacent. ");
             }
 
 
             else if (___inputBoxb___Copy.Text == "")
             {
-                MessageBox.Show("Enter value for b. ");
+                MessageBox.Show("Enter value for hypotenuse. ");
             }
 
             else
             {
-                double x = Convert.ToDouble(___inputBoxa__.Text) / Convert.ToDouble(___inputBoxb__.Text);
-                ___endProductBox__Copy.Text = Convert.ToString(Math.Cos(x));
+                double x = Convert.ToDouble(___inputBoxa___Copy.Text) / Convert.ToDouble(___inputBoxb___Copy.Text);
+                ___endProductBox__Copy.Text = Convert.ToString(Math.Cos(Math.PI / 180 * x));
             }
         }
+
+
 
         private void TanButton(object sender, RoutedEventArgs e)
         {
             if (___inputBoxa___Copy1.Text == "")
             {
-                MessageBox.Show("Enter value for a. ");
+                MessageBox.Show("Enter value for opposite. ");
             }
 
 
             else if (___inputBoxb___Copy1.Text == "")
             {
-                MessageBox.Show("Enter value for b. ");
+                MessageBox.Show("Enter value for adjacent. ");
             }
 
             else
             {
                 double x = Convert.ToDouble(___inputBoxa__.Text) / Convert.ToDouble(___inputBoxb__.Text);
-                ___endProductBox__Copy1.Text = Convert.ToString(Math.Tan(x));
+                ___endProductBox__Copy1.Text = Convert.ToString(Math.Tan(Math.PI / 180 * x));
             }
         }
     }
