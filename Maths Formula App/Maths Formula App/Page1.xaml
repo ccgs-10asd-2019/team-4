@@ -14,13 +14,9 @@
 
     <Grid>
         <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="#FF2A2D97" Offset="1"/>
-                <GradientStop Color="#FEFFFFFF"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="63" Margin="191,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408"/>
+                <ImageBrush ImageSource="images/mathgrey.jpg"/>
+            </Grid.Background>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="63" Margin="189,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408"/>
         <Button x:Name="n1" Content="1" HorizontalAlignment="Left" Margin="50,130,0,0" VerticalAlignment="Top" Width="100" Click="n1_Click" Background="#FF223F84" Foreground="White" Height="40" FontSize="20"/>
         <Button x:Name="n2" Content="2" HorizontalAlignment="Left" Margin="250,130,0,0" VerticalAlignment="Top" Width="100" Click="n2_Click" Foreground="White" Background="#FF223F84" Height="40" FontSize="20"/>
         <Button x:Name="n3" Content="3" HorizontalAlignment="Left" Margin="450,130,0,0" VerticalAlignment="Top" Width="100" Click="n3_Click" Background="#FF223F84" Foreground="White" Height="40" FontSize="20"/>
@@ -47,8 +43,8 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="20,22,0,0" VerticalAlignment="Top" Width="75" Click="back_Click" Foreground="White" Background="#FF223F84" RenderTransformOrigin="0.477,-0.403"/>
-            <Button x:Name="Help" Content="Help" HorizontalAlignment="Left" Margin="710,10,0,0" VerticalAlignment="Top" Width="75" Click="help_Click" Background="#FF223F84" Foreground="White"/>
+        <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="650,25,0,0" VerticalAlignment="Top" Width="100" Height="75" Click="back_Click" Foreground="White" Background="#FF223F84" RenderTransformOrigin="0.477,-0.403"/>
+            <Button x:Name="Help" Content="Help" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="75" Click="help_Click" Background="#FF223F84" Foreground="White" Margin="50,25,0,0"/>
         
 
     </Grid>
