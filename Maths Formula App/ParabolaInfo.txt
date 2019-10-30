@@ -1,0 +1,12 @@
+Turning Point form: y = a(x-b)^2 + c
+	turning point is (b, c)
+
+X Intercept form: y = a(x-b)(x-c)
+	X.ints: (b, 0), (c, 0)
+
+Y Intercept form: y = ax^2  + bx + c
+	(0, c) is the y.int. 
+	
+
+a, b, and c are all constants. 
+

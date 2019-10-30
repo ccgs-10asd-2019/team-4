@@ -1,0 +1,33 @@
+Logarithms are used to find the powers of numbers. 
+
+They are also used in the Richter scale, the PH scale, and the Decibel scale. 
+
+A logarithm is written like this: 
+
+log a(b) = c
+
+Where a is the base, b is the product, and c is the power in an exponential expression. 
+
+the above is converted to an exponential expression like this:
+
+a^c = b
+
+The log laws. 
+
+log law 1:
+log A + log B = log AB
+
+log law 2:
+log A - log B = log A/B
+
+log law 3: 
+log A^n = n log A
+
+log law 4: 
+- log A = log 1/A
+
+
+The change of base formula: 
+log b C = (log a C) / (log a B)
+
+log b C = (log a C) / (log a B)

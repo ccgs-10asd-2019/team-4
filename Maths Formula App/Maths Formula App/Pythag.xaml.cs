@@ -59,7 +59,19 @@ namespace Maths_Formula_App
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
-            if (___inputBoxa__.Text == "" && ___inputBoxb__.Text != "" && ___inputBoxc__.Text != "")
+
+            double output = 0;
+            bool result = double.TryParse(___inputBoxa__.Text, out output);
+
+            double output2 = 0;
+            bool result2 = double.TryParse(___inputBoxb__.Text, out output2);
+
+            double output3 = 0;
+            bool result3 = double.TryParse(___inputBoxc__.Text, out output3);
+
+            
+
+            if (___inputBoxa__.Text == "" && ___inputBoxb__.Text != "" && ___inputBoxc__.Text != "" && result2 == true && result3 == true)
             {
                 //a = c - b
                 double b = Convert.ToDouble(___inputBoxb__.Text);
@@ -67,7 +79,7 @@ namespace Maths_Formula_App
                 ___endProductBox_.Text = Convert.ToString(Math.Sqrt((c * c) - (b * b)));
             }
 
-            else if (___inputBoxa__.Text != "" && ___inputBoxb__.Text == "" && ___inputBoxc__.Text != "")
+            else if (___inputBoxa__.Text != "" && ___inputBoxb__.Text == "" && ___inputBoxc__.Text != "" && result == true && result3 == true)
             {
                 //b = c - a
                 double a = Convert.ToDouble(___inputBoxa__.Text);
@@ -75,17 +87,17 @@ namespace Maths_Formula_App
                 ___endProductBox_.Text = Convert.ToString(Math.Sqrt((c * c) - (a * a)));
             }
 
-            else if (___inputBoxa__.Text != "" && ___inputBoxb__.Text != "" && ___inputBoxc__.Text == "")
+            else if (___inputBoxa__.Text != "" && ___inputBoxb__.Text != "" && ___inputBoxc__.Text == "" && result2 == true && result == true)
             {
                 //a = b = c
                 double a = Convert.ToDouble(___inputBoxa__.Text);
-                double b = Convert.ToDouble(___inputBoxb__.Text); 
+                double b = Convert.ToDouble(___inputBoxb__.Text);
                 ___endProductBox_.Text = Convert.ToString(Math.Sqrt((a * a) + (b * b)));
             }
 
             else
             {
-                MessageBox.Show("input properly");
+                MessageBox.Show("To input properly, leave one side of the triangle blank and fill the other two to find that side. ");
             }
 
 
