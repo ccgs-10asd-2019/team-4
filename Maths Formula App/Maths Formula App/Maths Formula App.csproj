@@ -61,6 +61,9 @@
     <Compile Include="cubic.xaml.cs">
       <DependentUpon>cubic.xaml</DependentUpon>
     </Compile>
+    <Compile Include="geometry.xaml.cs">
+      <DependentUpon>geometry.xaml</DependentUpon>
+    </Compile>
     <Compile Include="IndecesSection.xaml.cs">
       <DependentUpon>IndecesSection.xaml</DependentUpon>
     </Compile>
@@ -80,14 +83,24 @@
     <Compile Include="Parabolas.xaml.cs">
       <DependentUpon>Parabolas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pythag.xaml.cs">
+      <DependentUpon>Pythag.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Quadratic_Formula_Page.xaml.cs">
       <DependentUpon>Quadratic_Formula_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SinCosTan.xaml.cs">
+      <DependentUpon>SinCosTan.xaml</DependentUpon>
     </Compile>
     <Page Include="Algebracalc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="cubic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="geometry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,7 +158,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pythag.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Quadratic_Formula_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SinCosTan.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -199,10 +220,16 @@
     <Resource Include="Images\Image1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Grid.gif" />
+    <Resource Include="Images\math.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Cartesian Plane.png" />
+    <Resource Include="Images\math.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mathred.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mathgrey.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,6 +24,8 @@ namespace Maths_Formula_App
         public Quadratic_Formula_Page()
         {
             InitializeComponent();
+
+            ___informationBox_.Text = File.ReadAllText("QuadraticInfo.txt");
         }
 
 
@@ -53,8 +55,27 @@ namespace Maths_Formula_App
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
-            Tuple<double, double> solution = SolveQuadratic(Convert.ToDouble(___inputBoxa__.Text), Convert.ToDouble(___inputBoxb__.Text), Convert.ToDouble(___inputBoxc__.Text));
-            ___endProductBox_.Text = solution.ToString();
+            if (___inputBoxa__.Text == "")
+            {
+                MessageBox.Show("Input something. ");
+            }
+
+
+            else if (___inputBoxb__.Text == "")
+            {
+                MessageBox.Show("Input something. ");
+            }
+
+            else if (___inputBoxc__.Text == "")
+            {
+                MessageBox.Show("Input something. ");
+            }
+
+            else
+            {
+                Tuple<double, double> solution = SolveQuadratic(Convert.ToDouble(___inputBoxa__.Text), Convert.ToDouble(___inputBoxb__.Text), Convert.ToDouble(___inputBoxc__.Text));
+                ___endProductBox_.Text = solution.ToString();
+            }
         }
         
         private void back_Click(object sender, RoutedEventArgs e)

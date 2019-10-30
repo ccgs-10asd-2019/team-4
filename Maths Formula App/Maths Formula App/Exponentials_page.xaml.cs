@@ -52,8 +52,8 @@ namespace Maths_Formula_App
 
         private void CubicClick(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(new cubic());
-            this.Frame.Navigate(new Uri("cubic.xaml", UriKind.Relative));
+        //    Frame.Navigate(new cubic());
+        //    this.Frame.Navigate(new Uri("cubic.xaml", UriKind.Relative));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

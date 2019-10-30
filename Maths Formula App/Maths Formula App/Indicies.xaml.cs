@@ -24,22 +24,45 @@ namespace Maths_Formula_App
         public Indicies()
         {
             InitializeComponent();
+
+            var text = File.ReadAllText("IndicesInfo.txt");
+            ___informationBox_.Text = text;
         }
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
-            double basee = Convert.ToDouble(___inputBoxa__.Text);
-            double power = Convert.ToDouble(___inputBoxb__.Text);
+            if (___inputBoxa__.Text == "")
+            {
+                MessageBox.Show("input something. ");
+            }
 
-            double product = Math.Pow(basee, power);
 
-            ___endProductBox_.Text = Convert.ToString(product);
+            else if (___inputBoxb__.Text == "")
+            {
+                MessageBox.Show("input something. ");
+            }
+
+            
+            else
+            {
+
+                double basee = Convert.ToDouble(___inputBoxa__.Text);
+                double power = Convert.ToDouble(___inputBoxb__.Text);
+
+                double product = Math.Pow(basee, power);
+
+                ___endProductBox_.Text = Convert.ToString(product);
+            }
         }
 
         private void backClick(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(new Individual_formula_page_template());
-            this.Frame.Navigate(new Uri("IndecesSection.xaml", UriKind.Relative));//change this to an indices page. 
+            StreamWriter File = new StreamWriter("IndicesInfo.txt");//puts the file in the bin, debug. 
+            File.Write(___informationBox_.Text);
+            File.Close();
+
+            Frame.Navigate(new IndecesSection());
+            this.Frame.Navigate(new Uri("IndecesSection.xaml", UriKind.Relative));
         }
 
         private void helpClick(object sender, RoutedEventArgs e)

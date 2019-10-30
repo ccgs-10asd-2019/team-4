@@ -26,6 +26,9 @@ namespace Maths_Formula_App
         public Parabolas()
         {
             InitializeComponent();
+
+            var text = File.ReadAllText("ParabolaInfo.txt");//retreives the file from bin, debug. 
+            ___informationBox_.Text = text;
         }
 
         private void buttonClicked(object sender, RoutedEventArgs e)
@@ -36,18 +39,18 @@ namespace Maths_Formula_App
 
             if (___inputBoxa__.Text == "")
             {
-                MessageBox.Show("iooi");
+                MessageBox.Show("Input something. ");
             }
 
 
             else if (___inputBoxh__.Text == "")
             {
-                MessageBox.Show("iooi");
+                MessageBox.Show("Input something. ");
             }
 
             else if (___inputBoxk__.Text == "")
             {
-                MessageBox.Show("iooi");
+                MessageBox.Show("Input something. ");
             }
 
             else
@@ -124,6 +127,10 @@ namespace Maths_Formula_App
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
+            StreamWriter File = new StreamWriter("ParabolaInfo.txt");//puts the file in the bin, debug. 
+            File.Write(___informationBox_.Text);
+            File.Close();
+
             Frame.Navigate(new Exponentials_page());
             this.Frame.Navigate(new Uri("Exponentials_page.xaml", UriKind.Relative));
             ___theCanvas_.Children.Clear();

@@ -23,6 +23,9 @@ namespace Maths_Formula_App
         public MainPage()
         {
             InitializeComponent();
+            this.WindowHeight = System.Windows.SystemParameters.MaximizedPrimaryScreenHeight;
+
+            this.WindowWidth = System.Windows.SystemParameters.MaximizedPrimaryScreenWidth;
         }
 
         private void Help_Click(object sender, RoutedEventArgs e)
@@ -48,7 +51,8 @@ namespace Maths_Formula_App
 
         private void Geo_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(new geometry());
+            this.Frame.Navigate(new Uri("geometry.xaml", UriKind.Relative));
         }
 
         private void Personal_Click(object sender, RoutedEventArgs e)

@@ -27,7 +27,7 @@ namespace Maths_Formula_App
 
         private void Button(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(new Exponentials_page());
+            Frame.Navigate(new Indicies());
             this.Frame.Navigate(new Uri("Indicies.xaml", UriKind.Relative));
         }
 

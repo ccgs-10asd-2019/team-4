@@ -24,6 +24,9 @@ namespace Maths_Formula_App
         public logarithms()
         {
             InitializeComponent();
+
+            var text = File.ReadAllText("LogarithmInfo.txt");//retreives the file from bin, debug. 
+            ___informationBox_.Text = text;
         }
 
         private void buttonClicked(object sender, RoutedEventArgs e)
@@ -60,6 +63,10 @@ namespace Maths_Formula_App
 
         private void backClick(object sender, RoutedEventArgs e)
         {
+            StreamWriter File = new StreamWriter("LogarithmInfo.txt"); 
+            File.Write(___informationBox_.Text);
+            File.Close();
+
             Frame.Navigate(new Individual_formula_page_template());
             this.Frame.Navigate(new Uri("Individual_formula_page_template.xaml", UriKind.Relative));
         }
@@ -74,8 +81,7 @@ namespace Maths_Formula_App
 
         private void ___FillButtonClick_(object sender, RoutedEventArgs e)
         {
-            var text = File.ReadAllText("LogarithmInfo.txt");//retreives the file from bin, debug. 
-            ___informationBox_.Text = text;
+            ___informationBox_.Text = File.ReadAllText("LogarithmInfo.txt");//retreives the file from bin, debug. 
         }
     }
 }
