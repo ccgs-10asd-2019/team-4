@@ -13,17 +13,14 @@
         </DockPanel>
         <Grid Height="450" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="800">
             <Grid.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF2A2D97" Offset="1"/>
-                    <GradientStop Color="#FEFFFFFF"/>
-                </LinearGradientBrush>
+                <ImageBrush ImageSource="images/mathgrey.jpg"/>
             </Grid.Background>
-            <Button x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="608,231,0,0" VerticalAlignment="Top" Width="75" Click="btnCalculate_Click"/>
-            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="101,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="621"/>
-            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="101,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="621" RenderTransformOrigin="-0.433,10.965"/>
-            <TextBox HorizontalAlignment="Left" Height="178" Margin="101,182,0,0" TextWrapping="Wrap" Text="To use this calculator you need to keep a few things in mind:                                             &quot;*&quot; represent multiplication                  &#xA;&quot;/&quot; represents division&#xA;&quot;^x&quot; represents a number to the power of a value&#xA;finally plus and minus function as normal using &quot;-&quot; &amp; &quot;+&quot;&#xA;&#xA;Still unsure?&#xA;Try: typing &quot;2*8/3+2^2&quot; and see what the calculator returns!&#xD;&#xA;&#xD;&#xA;&#xA;                                         " VerticalAlignment="Top" Width="468" />
-            <Button x:Name="___backButton_" Content="Back" HorizontalAlignment="Left" Margin="267,27,0,0" VerticalAlignment="Top" Width="75" Click="___backButton__Click"/>
+            <Button Foreground="White" Background="#FF223F84" x:Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="571,341,0,0" VerticalAlignment="Top" Width="100" Height="75" Click="btnCalculate_Click"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="22" Margin="50,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="621"/>
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="22" Margin="50,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="621" RenderTransformOrigin="-0.433,10.965"/>
+            <TextBox HorizontalAlignment="Left" Height="178" Margin="50,238,0,0" TextWrapping="Wrap" Text="To use this calculator you need to keep a few things in mind:                                             &quot;*&quot; represent multiplication                  &#xA;&quot;/&quot; represents division&#xA;&quot;^x&quot; represents a number to the power of a value&#xA;finally plus and minus function as normal using &quot;-&quot; &amp; &quot;+&quot;&#xA;&#xA;Still unsure?&#xA;Try: typing &quot;2*8/3+2^2&quot; and see what the calculator returns!&#xD;&#xA;&#xD;&#xA;&#xA;                                         " VerticalAlignment="Top" Width="468" />
+            <Button Foreground="White" Background="#FF223F84" x:Name="___backButton_" Content="Back" HorizontalAlignment="Left" Margin="700,0,0,0" VerticalAlignment="Top" Width="100" Height="75" Click="___backButton__Click"/>
+            <TextBlock Foreground="White" Background="#FF223F84" HorizontalAlignment="Left" Margin="50,0,0,0" TextWrapping="Wrap" Text="Input Calculator" VerticalAlignment="Top" Width="621" Height="100" FontSize="48" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center"/>
         </Grid>
     </StackPanel>
 </Page>

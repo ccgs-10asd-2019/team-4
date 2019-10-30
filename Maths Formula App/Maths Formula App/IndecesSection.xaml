@@ -36,7 +36,7 @@
             <Button Content="Standard Calculator" HorizontalAlignment="Left" Margin="85.5,19.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="Calculator" Height="100" Grid.Column="1" Grid.ColumnSpan="2"/>
             <Button x:Name="Quadratic_Formula" Content="Laws" HorizontalAlignment="Left" Height="100" Margin="0,19.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="Button"/>
             <Button Content="Empty" HorizontalAlignment="Left" Height="100" Margin="-12,10.5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="212"/>
-            <TextBlock Foreground="White" Background="#FF223F84" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="100" TextWrapping="Wrap" Text="Indeces Section" VerticalAlignment="Top" Width="550" FontSize="48" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center" Margin="2,9,0,0"/>
+            <TextBlock Foreground="White" Background="#FF223F84" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="100" TextWrapping="Wrap" Text="Indices Section" VerticalAlignment="Top" Width="550" FontSize="48" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center" Margin="2,9,0,0"/>
         </Grid>
     </StackPanel>
 </Page>

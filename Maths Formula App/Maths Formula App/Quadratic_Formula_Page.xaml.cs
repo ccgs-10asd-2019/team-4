@@ -25,6 +25,7 @@ namespace Maths_Formula_App
         {
             InitializeComponent();
 
+
             ___informationBox_.Text = File.ReadAllText("QuadraticInfo.txt");
         }
 
