@@ -219,5 +219,17 @@
   <ItemGroup>
     <Resource Include="Images\Image1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\math.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\math.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mathred.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mathgrey.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
