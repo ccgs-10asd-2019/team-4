@@ -9,7 +9,7 @@ log a(b) = c
 Where a is the base, b is the product, and c is the power in an exponential expression. 
 
 the above is converted to an exponential expression like this:
-
+food
 a^c = b
 
 The log laws. 

@@ -27,7 +27,7 @@ namespace Maths_Formula_App
         {
             InitializeComponent();
 
-            var text = File.ReadAllText("ParabolaInfo.txt");//retreives the file from bin, debug. 
+            var text = File.ReadAllText("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\ParabolaInfo.txt");//retreives the file from bin, debug. 
             ___informationBox_.Text = text;
         }
 
@@ -152,7 +152,7 @@ namespace Maths_Formula_App
 
         private void ___create_file__Click(object sender, RoutedEventArgs e)
         {
-            StreamWriter File = new StreamWriter("ParabolaInfo.txt");//puts the file in the bin, debug. 
+            StreamWriter File = new StreamWriter("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\ParabolaInfo.txt");//puts the file in the bin, debug. 
             File.Write(___informationBox_.Text);
             File.Close();
         }
@@ -160,7 +160,7 @@ namespace Maths_Formula_App
         
         private void ___FillButtonClick_(object sender, RoutedEventArgs e)
         {
-            var text = File.ReadAllText("ParabolaInfo.txt");//retreives the file from bin, debug. 
+            var text = File.ReadAllText("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\ParabolaInfo.txt");//retreives the file from bin, debug. 
             ___informationBox_.Text = text;
         }
     }
