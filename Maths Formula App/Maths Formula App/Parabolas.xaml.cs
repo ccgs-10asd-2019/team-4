@@ -64,6 +64,19 @@ namespace Maths_Formula_App
                 double origin_x = ___theCanvas_.Width / 2;
                 double origin_y = ___theCanvas_.Height / 2;
 
+                //bool food = false;
+
+                //while (food == false)
+                //{
+                //    double constant1 = 0;
+                //    double constant2 = 0;
+
+                //    if (x )
+                //    {
+
+                //    }
+                //}
+
                 for (var i = 0; i <= 100; i += 1)
                 {
                     double y = (a * (i*i)) + (b * i) + (100*c);
