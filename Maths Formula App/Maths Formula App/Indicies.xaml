@@ -29,9 +29,9 @@
             </Grid.RowDefinitions>
             <TextBlock Background="#FF223F84" Foreground="White" Grid.Column="1"  HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small"/>
             <TextBlock Foreground="White" Background="#FF223F84" x:Name="___formulaName_" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Height="50" Width="250" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center"><Run Text="Indic"/><Run Text="es"/><Run Text=" Laws"/></TextBlock>
-            <TextBox x:Name="___Boxa__" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" Text="Base: "/>
+            <TextBox x:Name="___Boxa__" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" Text="Base: " IsReadOnly="True"/>
             <Button x:Name="___Button_" Content="Enter" HorizontalAlignment="Left" Margin="10,70,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="buttonClicked"/>
-            <TextBox x:Name="___Boxb__" HorizontalAlignment="Left" Height="25" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" Text="Power: "/>
+            <TextBox x:Name="___Boxb__" HorizontalAlignment="Left" Height="25" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" Text="Power: " IsReadOnly="True"/>
             <TextBox x:Name="___inputBoxa__" HorizontalAlignment="Left" Height="25" Margin="60,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
             <TextBox x:Name="___inputBoxb__" HorizontalAlignment="Left" Height="25" Margin="60,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
             <Button x:Name="Back" Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="101,10,0,0" VerticalAlignment="Top" Width="75" Foreground="White" Background="#FF223F84" Click="backClick"/>

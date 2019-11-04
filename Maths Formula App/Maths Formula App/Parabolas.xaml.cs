@@ -27,7 +27,7 @@ namespace Maths_Formula_App
         {
             InitializeComponent();
 
-            var text = File.ReadAllText("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\ParabolaInfo.txt");//retreives the file from bin, debug. 
+            var text = File.ReadAllText("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\ParabolaInfo.txt");
             ___informationBox_.Text = text;
         }
 
