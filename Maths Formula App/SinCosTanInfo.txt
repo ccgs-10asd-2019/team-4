@@ -1,3 +1,7 @@
- Sin Cos and Tan can be used to find the angles of a right angle triangle.                        SohCahToa stands for Sine; opposite over hypotinuse, Cosine; adjasent over hypotinuse, Tangent; opposite over adjasent.                        In a triangle the opposite side to the angle being found is the farthest one from it, and the adjacent one is the closest that is not the hypotinuse.     
+Sine, cosine and tangent are functions for finding the angle in a right angle traingle. 
 
-if the angle is negative, the triangle doesn't exist.                     
+For sine, a the opposite and hypotenuse sides are inputed to find the angle. 
+
+SohCahToa stands for sine; opposite over hypotenuse, cosine; adjacent over hypotenuse, and tangent; opposite over adjacent. 
+
+

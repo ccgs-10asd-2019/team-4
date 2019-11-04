@@ -27,11 +27,11 @@
                 <RowDefinition/>
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
-            <TextBlock HorizontalAlignment="Left" Margin="0,67,0,0" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small" Grid.Column="1" Grid.RowSpan="2"/>
+            <TextBlock  Background="#FF223F84" Foreground="White" HorizontalAlignment="Left" Margin="0,67,0,0" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small" Grid.Column="1" Grid.RowSpan="2"/>
             <TextBlock Foreground="White" Background="#FF223F84" x:Name="___formulaName_" HorizontalAlignment="Left" Margin="10,12,0,13" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="36" Height="50" Width="480" Text="Sin, Cos and Tan" TextDecorations="Underline" FontWeight="Bold" TextAlignment="Center"/>
-            <TextBox x:Name="___Boxa__" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="O:"/>
+            <TextBox x:Name="___Boxa__" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="O:" IsReadOnly="True"/>
             <Button x:Name="___Button_" Content="Enter" HorizontalAlignment="Left" Margin="10,70,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="Sine"/>
-            <TextBox x:Name="___Boxb__" HorizontalAlignment="Left" Height="25" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="H:"/>
+            <TextBox x:Name="___Boxb__" HorizontalAlignment="Left" Height="25" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="H:" IsReadOnly="True"/>
             <TextBox x:Name="___inputBoxa__" HorizontalAlignment="Left" Height="25" Margin="47,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
             <TextBox x:Name="___inputBoxb__" HorizontalAlignment="Left" Height="25" Margin="47,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
             <Button x:Name="Back" Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="101,10,0,0" VerticalAlignment="Top" Width="75" Foreground="White" Background="#FF223F84" Click="backClick"/>
@@ -48,13 +48,13 @@ In a triangle the opposite side to the angle being found is the farthest one fro
 &#xD;" Grid.Column="1"/>
             <Button x:Name="___create_file_" Content="Save" HorizontalAlignment="Left" Margin="216,70,0,0" VerticalAlignment="Top" Width="74" Click="___create_file__Click" Grid.Column="1" Background="#FFF5F4FF" Grid.RowSpan="2"/>
             <Button x:Name="___fillButton_" Content="Revert" HorizontalAlignment="Left" Margin="136,70,0,0" VerticalAlignment="Top" Width="75" Click="___FillButtonClick_" Grid.Column="1" Background="#FFF5F4FF" Grid.RowSpan="2"/>
-            <TextBox x:Name="___Boxa___Copy" HorizontalAlignment="Left" Height="25" Margin="192,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="A:"/>
-            <TextBox x:Name="___Boxb___Copy" HorizontalAlignment="Left" Height="25" Margin="192,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="H:"/>
+            <TextBox x:Name="___Boxa___Copy" HorizontalAlignment="Left" Height="25" Margin="192,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="A:" IsReadOnly="True"/>
+            <TextBox x:Name="___Boxb___Copy" HorizontalAlignment="Left" Height="25" Margin="192,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="H:" IsReadOnly="True"/>
             <TextBox x:Name="___inputBoxa___Copy" HorizontalAlignment="Left" Height="25" Margin="229,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
             <TextBox x:Name="___inputBoxb___Copy" HorizontalAlignment="Left" Height="25" Margin="229,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
             <TextBox x:Name="___endProductBox__Copy" HorizontalAlignment="Left" Height="196" Margin="192,159,0,0" Grid.Row="1" TextWrapping="Wrap" Text="End product (x)" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="___Boxa___Copy1" HorizontalAlignment="Left" Height="25" Margin="370,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="O:"/>
-            <TextBox x:Name="___Boxb___Copy1" HorizontalAlignment="Left" Height="25" Margin="370,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="A:"/>
+            <TextBox x:Name="___Boxa___Copy1" HorizontalAlignment="Left" Height="25" Margin="370,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="O:" IsReadOnly="True"/>
+            <TextBox x:Name="___Boxb___Copy1" HorizontalAlignment="Left" Height="25" Margin="370,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="A:" IsReadOnly="True"/>
             <TextBox x:Name="___inputBoxa___Copy1" HorizontalAlignment="Left" Height="25" Margin="407,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
             <TextBox x:Name="___inputBoxb___Copy1" HorizontalAlignment="Left" Height="25" Margin="407,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
             <TextBox x:Name="___endProductBox__Copy1" HorizontalAlignment="Left" Height="196" Margin="370,159,0,0" Grid.Row="1" TextWrapping="Wrap" Text="End product (x)" VerticalAlignment="Top" Width="120"/>

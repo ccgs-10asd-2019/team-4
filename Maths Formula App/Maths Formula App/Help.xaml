@@ -12,16 +12,12 @@
             <Frame x:Name="Frame" NavigationUIVisibility="Hidden" />
         </DockPanel>
         <Grid x:Name="back" HorizontalAlignment="Right" Width="800" Height="450" VerticalAlignment="Top">
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="#FF2A2D97" Offset="1"/>
-                <GradientStop Color="#FEFFFFFF"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Image x:Name="HelpTitle" HorizontalAlignment="Left" Height="35" Margin="64,10,0,0" VerticalAlignment="Top" Width="210" Source="Images/Title2.jpg"/>
-        <Button x:Name="back1" Content="Back" HorizontalAlignment="Left" Margin="640,10,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="back_Click"/>
-            <TextBlock HorizontalAlignment="Left" Margin="63,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="285" Width="427" Foreground="White" FontSize="18"><Run Text="Welcome to your Mathematics Formula App!"/><LineBreak/><Run Text="You can navigate throughout the app by using the respective buttons. From the initial page you can us"/><Run Text="e"/><Run Text=" formulas from "/><Run Text="the "/><Run Text="branch of maths you desire, e.g. geometry, and when you want to use another simply press back and chose the next"/><Run Text="."/><Run Text=" There is also the opportunity to create your own formulas listed under 'Personal'."/></TextBlock>
+            <Grid.Background>
+                <ImageBrush ImageSource="images/mathgrey.jpg"/>
+            </Grid.Background>
+            <Button x:Name="back1" Content="Back" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="100" Height="75" Background="#FF223F84" Foreground="White" Click="back_Click"/>
+            <TextBlock  Foreground="White" HorizontalAlignment="Left" Margin="64,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="315" Width="675"  FontSize="22" TextDecorations="{x:Null}" FontWeight="Bold"><Run Text="Welcome to your Mathematics Formula App!"/><LineBreak/><Run Text="You can navigate throughout the app by using the respective buttons. From the initial page you can us"/><Run Text="e"/><Run Text=" formulas from "/><Run Text="the "/><Run Text="branch of maths you desire, e.g. geometry, and when you want to use another simply press back and chose the next"/><Run Text="."/><Run Text=" There is also the opportunity to create your own formulas listed under 'Personal'."/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="64,0,0,0" TextWrapping="Wrap" Text="Maths Help Page" VerticalAlignment="Top" Height="100" Width="550" Background="#FF223F84" Foreground="White" FontSize="48" TextDecorations="Underline" FontWeight="Bold" TextAlignment="Center"/>
         </Grid>
     </StackPanel>
 </Page>

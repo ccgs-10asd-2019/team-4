@@ -27,7 +27,7 @@ namespace Maths_Formula_App
         {
             InitializeComponent();
 
-            var text = File.ReadAllText("ParabolaInfo.txt");//retreives the file from bin, debug. 
+            var text = File.ReadAllText("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\ParabolaInfo.txt");//retreives the file from bin, debug. 
             ___informationBox_.Text = text;
         }
 
@@ -63,6 +63,19 @@ namespace Maths_Formula_App
 
                 double origin_x = ___theCanvas_.Width / 2;
                 double origin_y = ___theCanvas_.Height / 2;
+
+                //bool food = false;
+
+                //while (food == false)
+                //{
+                //    double constant1 = 0;
+                //    double constant2 = 0;
+
+                //    if (x )
+                //    {
+
+                //    }
+                //}
 
                 for (var i = 0; i <= 100; i += 1)
                 {
@@ -148,7 +161,7 @@ namespace Maths_Formula_App
 
         private void ___create_file__Click(object sender, RoutedEventArgs e)
         {
-            StreamWriter File = new StreamWriter("ParabolaInfo.txt");//puts the file in the bin, debug. 
+            StreamWriter File = new StreamWriter("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\ParabolaInfo.txt");//puts the file in the bin, debug. 
             File.Write(___informationBox_.Text);
             File.Close();
         }
@@ -156,7 +169,7 @@ namespace Maths_Formula_App
         
         private void ___FillButtonClick_(object sender, RoutedEventArgs e)
         {
-            var text = File.ReadAllText("ParabolaInfo.txt");//retreives the file from bin, debug. 
+            var text = File.ReadAllText("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\ParabolaInfo.txt");//retreives the file from bin, debug. 
             ___informationBox_.Text = text;
         }
     }
