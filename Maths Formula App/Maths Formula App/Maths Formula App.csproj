@@ -252,5 +252,14 @@
   <ItemGroup>
     <Resource Include="Images\mathgrey.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Notes\IndicesInfo.txt" />
+    <Resource Include="Notes\LogarithmInfo.txt" />
+    <Resource Include="Notes\ParabolaInfo.txt" />
+    <Resource Include="Notes\PythagInfo.txt" />
+    <Resource Include="Notes\QuadraticInfo.txt" />
+    <Resource Include="Notes\SinCosTanInfo.txt" />
+    <Resource Include="Notes\Test.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

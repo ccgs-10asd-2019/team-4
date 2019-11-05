@@ -1,0 +1,7 @@
+Sine, cosine and tangent are functions for finding the angle in a right angle traingle. 
+
+For sine, a the opposite and hypotenuse sides are inputed to find the angle. 
+
+SohCahToa stands for sine; opposite over hypotenuse, cosine; adjacent over hypotenuse, and tangent; opposite over adjacent. 
+
+

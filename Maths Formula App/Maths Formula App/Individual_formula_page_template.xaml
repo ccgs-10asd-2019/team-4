@@ -28,12 +28,49 @@
             </Grid.RowDefinitions>
             <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small" Height="25" Width="140"/>
             <TextBlock  Background="#FF223F84" Foreground="White" HorizontalAlignment="Left" Margin="0,10,0,83.5" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="48" Height="100" Width="550" Grid.ColumnSpan="2" TextDecorations="Underline" FontWeight="Bold" Text="Algebra" TextAlignment="Center"/>
-            <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="140,22,0,0" VerticalAlignment="Top" Width="100" Background="#FF223F84" Foreground="White" Click="Home_Return" Grid.Column="2" Height="74"/>
+            <Button x:Name="Back" Content="Back" HorizontalAlignment="Left" Margin="140,10,0,0" VerticalAlignment="Top" Width="100" Background="#FF223F84" Foreground="White" Click="Home_Return" Grid.Column="2" Height="74">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="Help" Content="Help" HorizontalAlignment="Left" Margin="140,163.5,0,0" VerticalAlignment="Top" Width="100" Background="#FF223F84" Foreground="White" Click="Home_Return" Grid.Column="2" Height="74" Grid.Row="1" Grid.RowSpan="2">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
 
-            <Button Content="Standard Calculator" HorizontalAlignment="Left" Margin="67,137.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="Calculator" Height="100" Grid.Column="1" Grid.RowSpan="2"/>
-            <Button x:Name="Quadratic_Formula" Content="Quadratic Formula" HorizontalAlignment="Left" Height="100" Margin="67,134,0,0" VerticalAlignment="Top" Width="200" Click="Quadratic_Formula_Click" Grid.RowSpan="2"/>
-            <Button Content="Test calculator" HorizontalAlignment="Left" Height="100" Margin="67,137.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="New_Calc" Grid.RowSpan="2"/>
-            <Button Content="Logarithms" Grid.Column="1" HorizontalAlignment="Left" Height="98" Margin="67,134,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click" Grid.RowSpan="2"/>
+            <Button Content="Standard Calculator" HorizontalAlignment="Left" Margin="67,137.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="Calculator" Height="100" Grid.Column="1" Grid.RowSpan="2">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="Quadratic_Formula" Content="Quadratic Formula" HorizontalAlignment="Left" Height="100" Margin="0,132,0,0" VerticalAlignment="Top" Width="200" Click="Quadratic_Formula_Click" Grid.RowSpan="2">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Test calculator" HorizontalAlignment="Left" Height="100" Margin="0,137.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="New_Calc" Grid.RowSpan="2">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Logarithms" Grid.Column="1" HorizontalAlignment="Left" Height="98" Margin="67,134,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click" Grid.RowSpan="2">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </Grid>
     </StackPanel>
 </Page>

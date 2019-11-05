@@ -1,0 +1,16 @@
+a^m × a^n = a^m+n 
+
+
+(a^m)^n = a^mn
+
+
+a^m / a^n = a^m−n 
+
+
+a^−m =1 / a^m
+
+
+a^0 = 1
+
+
+a^1 / n = √n a

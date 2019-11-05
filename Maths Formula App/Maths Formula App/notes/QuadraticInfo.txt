@@ -1,0 +1,8 @@
+This is the quadratic formula. It will solve any quadratic equation that you put in it for x. 
+
+Furthermore, you can use the terms in the square root to quickly find out if there are two possible values for x, one, or none. 
+
+If the terms inside the square root are less than 0, there are now answers, and no x intercepts on a Cartesian plane. If it equals 0, there is one answer for x and one x intercept for the Cartesian plane. If it is more than 0, there two possible answers and two x intercepts on the Cartesian plane. 
+
+
+
