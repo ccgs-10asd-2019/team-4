@@ -10,4 +10,3 @@ Y Intercept form: y = ax^2  + bx + c
 
 a, b, and c are all constants. 
 
-fod

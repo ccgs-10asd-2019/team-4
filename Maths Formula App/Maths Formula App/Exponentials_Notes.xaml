@@ -1,0 +1,34 @@
+﻿<Page x:Class="Maths_Formula_App.Exponentials_Notes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Maths_Formula_App"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Exponentials_Notes">
+
+    <StackPanel Height="450" VerticalAlignment="Top" HorizontalAlignment="Left" Width="800">
+        <DockPanel>
+            <Frame x:Name="Frame" NavigationUIVisibility="Hidden" />
+        </DockPanel>
+        <Grid HorizontalAlignment="Left" Width="800" Height="451" RenderTransformOrigin="0.503,0.386" >
+            <Grid.Background>
+                <ImageBrush ImageSource="images/mathgrey.jpg"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small"/>
+            <TextBlock x:Name="___formulaName_" HorizontalAlignment="Left" Margin="10,12,0,13" TextWrapping="Wrap"  Background="#FF223F84" Foreground="White" Text="Exponential Notes" VerticalAlignment="Center" FontSize="36" Height="50" Width="480" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center"/>
+            <TextBox x:Name="___informationBox_" HorizontalAlignment="Left" Height="325" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" AcceptsReturn="True" Background="White" Grid.ColumnSpan="2" />
+            <Button x:Name="___create_file_" Content="Save" HorizontalAlignment="Left" Margin="216,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="___create_file__Click" Grid.Column="1" Background="#FFF5F4FF"/>
+        </Grid>
+    </StackPanel>
+</Page>

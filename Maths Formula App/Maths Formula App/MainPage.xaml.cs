@@ -58,7 +58,8 @@ namespace Maths_Formula_App
 
         private void Personal_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(new Personal());
+            this.Frame.Navigate(new Uri("Personal.xaml", UriKind.Relative));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

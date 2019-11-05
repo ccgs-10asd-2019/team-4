@@ -61,6 +61,9 @@
     <Compile Include="cubic.xaml.cs">
       <DependentUpon>cubic.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Exponentials_Notes.xaml.cs">
+      <DependentUpon>Exponentials_Notes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="geometry.xaml.cs">
       <DependentUpon>geometry.xaml</DependentUpon>
     </Compile>
@@ -83,6 +86,9 @@
     <Compile Include="Parabolas.xaml.cs">
       <DependentUpon>Parabolas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Personal.xaml.cs">
+      <DependentUpon>Personal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pythag.xaml.cs">
       <DependentUpon>Pythag.xaml</DependentUpon>
     </Compile>
@@ -97,6 +103,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="cubic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Exponentials_Notes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -155,6 +165,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Parabolas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Personal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -230,6 +244,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\mathgrey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Notes\IndicesInfo.txt" />
+    <Resource Include="Notes\LogarithmInfo.txt" />
+    <Resource Include="Notes\ParabolaInfo.txt" />
+    <Resource Include="Notes\PythagInfo.txt" />
+    <Resource Include="Notes\QuadraticInfo.txt" />
+    <Resource Include="Notes\SinCosTanInfo.txt" />
+    <Resource Include="Notes\Test.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

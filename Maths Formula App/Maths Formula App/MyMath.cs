@@ -26,12 +26,14 @@ namespace Maths_Formula_App
                     x += y;
                 else
                     x -= y;
+                Console.WriteLine(op);
             }
         }
 
         private static double parseSquares(char[] expr, ref int index)
         {
-            double x = GetDouble(expr, ref index);
+            double x = parseTrignometricRatios(expr, ref index);
+            //double x = GetDouble(expr, ref index);
             while (true)
             {
                 string op = expr[index].ToString();
@@ -43,6 +45,7 @@ namespace Maths_Formula_App
                     x = Math.Pow(x, y);
                 else
                     x = Math.Sqrt(y);
+                Console.WriteLine(op);
             }
         }
 
@@ -60,12 +63,14 @@ namespace Maths_Formula_App
                     x /= y;
                 else
                     x *= y;
+                Console.WriteLine(op);
             }
         }
 
-        private static double parseTrignometricRatios(char[] expr, int index)
+        private static double parseTrignometricRatios(char[] expr, ref int index)
         {
-            double x = parseSquares(expr, ref index);
+            double x = GetDouble(expr, ref index);
+            //double x = parseSquares(expr, ref index);
             while (true)
             {
                 string op = expr[index].ToString();
@@ -74,11 +79,13 @@ namespace Maths_Formula_App
                 index++;
                 double y = GetDouble(expr, ref index);
                 if (op == "s")
-                    x = Math.Sin(y);
+                    //Console.WriteLine(Math.Sin(Math.PI / 180 * y));
+                    x = Math.Sin(Math.PI / 180 * y);
                 if (op == "c")
-                    x = Math.Cos(y);
+                    x = Math.Cos(Math.PI / 180 * y);
                 else
-                    x = Math.Tan(y);
+                    x = Math.Tan(Math.PI / 180 * y);
+                Console.WriteLine(op);
             }
         }
 
@@ -95,8 +102,11 @@ namespace Maths_Formula_App
                     break;
                 }
             }
+            Console.WriteLine(dbl);
+            
             return double.Parse(dbl);
         }
-
+        
     }
 }
+//op = +, -, *, /, etc
