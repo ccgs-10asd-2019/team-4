@@ -61,17 +61,17 @@
     <Compile Include="cubic.xaml.cs">
       <DependentUpon>cubic.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Exponentials_Notes.xaml.cs">
-      <DependentUpon>Exponentials_Notes.xaml</DependentUpon>
+    <Compile Include="Parabola_Notes.xaml.cs">
+      <DependentUpon>Parabola_Notes.xaml</DependentUpon>
     </Compile>
     <Compile Include="geometry.xaml.cs">
       <DependentUpon>geometry.xaml</DependentUpon>
     </Compile>
-    <Compile Include="IndecesSection.xaml.cs">
-      <DependentUpon>IndecesSection.xaml</DependentUpon>
+    <Compile Include="IndicesSection.xaml.cs">
+      <DependentUpon>IndicesSection.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Indicies.xaml.cs">
-      <DependentUpon>Indicies.xaml</DependentUpon>
+    <Compile Include="Indices.xaml.cs">
+      <DependentUpon>Indices.xaml</DependentUpon>
     </Compile>
     <Compile Include="logarithms.xaml.cs">
       <DependentUpon>logarithms.xaml</DependentUpon>
@@ -106,7 +106,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Exponentials_Notes.xaml">
+    <Page Include="Parabola_Notes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -122,11 +122,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="IndecesSection.xaml">
+    <Page Include="IndicesSection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Indicies.xaml">
+    <Page Include="Indices.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

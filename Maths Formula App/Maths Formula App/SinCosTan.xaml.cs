@@ -26,7 +26,7 @@ namespace Maths_Formula_App
         {
             InitializeComponent();
 
-            ___informationBox_.Text = File.ReadAllText("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\SinCosTanInfo.txt");
+            ___informationBox_.Text = File.ReadAllText("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\SinCosTanInfo.txt");
         }
 
         
