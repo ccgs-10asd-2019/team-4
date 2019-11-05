@@ -41,6 +41,7 @@ namespace Maths_Formula_App
             {
                 MessageBox.Show("Enter value for b. ");
             }
+
             else
             {
                 double a = Convert.ToDouble(___inputBoxa__.Text);
