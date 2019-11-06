@@ -15,7 +15,13 @@
             <Grid.Background>
                 <ImageBrush ImageSource="images/mathgrey.jpg"/>
             </Grid.Background>
-            <Button x:Name="back1" Content="Back" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="100" Height="75" Background="#FF223F84" Foreground="White" Click="back_Click"/>
+            <Button x:Name="back1" Content="Back" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="100" Height="75" Background="#FF223F84" Foreground="White" Click="back_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
             <TextBlock  Foreground="White" HorizontalAlignment="Left" Margin="64,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="315" Width="675"  FontSize="22" TextDecorations="{x:Null}" FontWeight="Bold"><Run Text="Welcome to your Mathematics Formula App!"/><LineBreak/><Run Text="You can navigate throughout the app by using the respective buttons. From the initial page you can us"/><Run Text="e"/><Run Text=" formulas from "/><Run Text="the "/><Run Text="branch of maths you desire, e.g. geometry, and when you want to use another simply press back and chose the next"/><Run Text="."/><Run Text=" There is also the opportunity to create your own formulas listed under 'Personal'."/></TextBlock>
             <TextBlock HorizontalAlignment="Left" Margin="64,0,0,0" TextWrapping="Wrap" Text="Maths Help Page" VerticalAlignment="Top" Height="100" Width="550" Background="#FF223F84" Foreground="White" FontSize="48" TextDecorations="Underline" FontWeight="Bold" TextAlignment="Center"/>
         </Grid>
