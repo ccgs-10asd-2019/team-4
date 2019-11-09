@@ -36,7 +36,7 @@ namespace Maths_Formula_App
 
         private void backClick(object sender, RoutedEventArgs e)
         {
-            StreamWriter File = new StreamWriter("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\PythagInfo.txt");
+            StreamWriter File = new StreamWriter("PythagInfo.txt");//C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\
             File.Write(___informationBox_.Text);
             File.Close();
 
@@ -46,7 +46,7 @@ namespace Maths_Formula_App
 
         private void ___create_file__Click(object sender, RoutedEventArgs e)
         {
-            StreamWriter File = new StreamWriter("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\PythagInfo.txt");//puts the file in the bin, debug. 
+            StreamWriter File = new StreamWriter("PythagInfo.txt");
             File.Write(___informationBox_.Text);
             File.Close();
         }

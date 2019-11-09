@@ -25,8 +25,7 @@ namespace Maths_Formula_App
         public SinCosTan()
         {
             InitializeComponent();
-
-            ___informationBox_.Text = File.ReadAllText("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\SinCosTanInfo.txt");
+            
         }
 
         
@@ -49,14 +48,14 @@ namespace Maths_Formula_App
 
         private void ___create_file__Click(object sender, RoutedEventArgs e)
         {
-            StreamWriter File = new StreamWriter("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\SinCosTanInfo.txt");//puts the file in the bin, debug. 
+            StreamWriter File = new StreamWriter("SinCosTanInfo.txt");//puts the file in the bin, debug. 
             File.Write(___informationBox_.Text);
             File.Close();
         }
 
         private void ___FillButtonClick_(object sender, RoutedEventArgs e)
         {
-            ___informationBox_.Text = File.ReadAllText("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\SinCosTanInfo.txt");
+            ___informationBox_.Text = File.ReadAllText("SinCosTanInfo.txt");
         }
 
 
