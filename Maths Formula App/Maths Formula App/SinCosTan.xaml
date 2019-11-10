@@ -46,7 +46,6 @@ In a triangle the opposite side to the angle being found is the farthest one fro
                      
 
 &#xD;" Grid.Column="1"/>
-            <Button x:Name="___create_file_" Content="Save" HorizontalAlignment="Left" Margin="216,70,0,0" VerticalAlignment="Top" Width="74" Click="___create_file__Click" Grid.Column="1" Background="#FFF5F4FF" Grid.RowSpan="2"/>
             <Button x:Name="___fillButton_" Content="Revert" HorizontalAlignment="Left" Margin="136,70,0,0" VerticalAlignment="Top" Width="75" Click="___FillButtonClick_" Grid.Column="1" Background="#FFF5F4FF" Grid.RowSpan="2"/>
             <TextBox x:Name="___Boxa___Copy" HorizontalAlignment="Left" Height="25" Margin="192,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="A:" IsReadOnly="True"/>
             <TextBox x:Name="___Boxb___Copy" HorizontalAlignment="Left" Height="25" Margin="192,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="H:" IsReadOnly="True"/>

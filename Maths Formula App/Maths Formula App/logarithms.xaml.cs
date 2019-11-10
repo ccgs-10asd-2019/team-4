@@ -24,7 +24,8 @@ namespace Maths_Formula_App
         public logarithms()
         {
             InitializeComponent();
-            
+
+            ___informationBox_.Text = File.ReadAllText("LogarithmInfo.txt");
         }
 
         private void buttonClicked(object sender, RoutedEventArgs e)

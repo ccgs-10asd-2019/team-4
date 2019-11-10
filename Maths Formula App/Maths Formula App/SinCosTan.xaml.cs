@@ -25,7 +25,8 @@ namespace Maths_Formula_App
         public SinCosTan()
         {
             InitializeComponent();
-            
+
+            ___informationBox_.Text = File.ReadAllText("SinCosTanInfo.txt");
         }
 
         
@@ -36,6 +37,10 @@ namespace Maths_Formula_App
         {
             Frame.Navigate(new geometry());
             this.Frame.Navigate(new Uri("geometry.xaml", UriKind.Relative));
+
+            StreamWriter File = new StreamWriter("SinCosTanInfo.txt");//puts the file in the bin, debug. 
+            File.Write(___informationBox_.Text);
+            File.Close();
         }
 
         private void helpClick(object sender, RoutedEventArgs e)

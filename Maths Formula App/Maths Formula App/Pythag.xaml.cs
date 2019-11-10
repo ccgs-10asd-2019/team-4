@@ -24,6 +24,7 @@ namespace Maths_Formula_App
         public Pythag()
         {
             InitializeComponent();
+            ___informationBox_.Text = File.ReadAllText("PythagInfo.txt");
         }
 
 
@@ -54,7 +55,7 @@ namespace Maths_Formula_App
 
         private void ___FillButtonClick_(object sender, RoutedEventArgs e)
         {
-            ___informationBox_.Text = File.ReadAllText("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\PythagInfo.txt");//retreives the file from bin, debug. 
+            ___informationBox_.Text = File.ReadAllText("PythagInfo.txt");//retreives the file from bin, debug. 
         }
 
         private void buttonClicked(object sender, RoutedEventArgs e)

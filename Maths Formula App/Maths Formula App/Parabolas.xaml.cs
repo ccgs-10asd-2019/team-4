@@ -28,6 +28,10 @@ namespace Maths_Formula_App
             InitializeComponent();
 
             
+            var text = File.ReadAllText("ParabolaInfo.txt");
+            ___informationBox_.Text = text;
+            
+
         }
 
         private void buttonClicked(object sender, RoutedEventArgs e)

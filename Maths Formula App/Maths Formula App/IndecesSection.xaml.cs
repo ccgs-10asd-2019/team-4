@@ -33,7 +33,8 @@ namespace Maths_Formula_App
 
         private void Help_Button(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(new Exponentials_page());
+            this.Frame.Navigate(new Uri("Help.xaml", UriKind.Relative));
         }
 
         private void Home_Return(object sender, RoutedEventArgs e)
@@ -44,7 +45,8 @@ namespace Maths_Formula_App
 
         private void Calculator(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(new Exponentials_page());
+            this.Frame.Navigate(new Uri("Page1.xaml", UriKind.Relative));
         }
     }
 }
