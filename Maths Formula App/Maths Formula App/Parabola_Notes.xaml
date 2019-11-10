@@ -25,10 +25,10 @@
                 <RowDefinition/>
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Information" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small"/>
-            <TextBlock x:Name="___formulaName_" HorizontalAlignment="Left" Margin="10,12,0,13" TextWrapping="Wrap"  Background="#FF223F84" Foreground="White" Text="Exponential Notes" VerticalAlignment="Center" FontSize="36" Height="50" Width="480" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center"/>
+            <TextBlock x:Name="___formulaName_" HorizontalAlignment="Left" Margin="10,12,0,13" TextWrapping="Wrap"  Background="#FF223F84" Foreground="White" Text="Parabola Notes" VerticalAlignment="Center" FontSize="36" Height="50" Width="480" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center"/>
             <TextBox x:Name="___informationBox_" HorizontalAlignment="Left" Height="325" Margin="10,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="780" AcceptsReturn="True" Background="White" Grid.ColumnSpan="2" />
-            <Button x:Name="___create_file_" Content="Save" HorizontalAlignment="Left" Margin="216,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="___create_file__Click" Grid.Column="1" Background="#FFF5F4FF"/>
+            <Button x:Name="___load_file_" Content="Load" HorizontalAlignment="Left" Margin="216,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="___load_file__Click" Grid.Column="1" Background="#FFF5F4FF"/>
+            <Button x:Name="___save_file_" Content="Save" HorizontalAlignment="Left" Margin="137,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="___save_file__Click" Grid.Column="1" Background="#FFF5F4FF"/>
         </Grid>
     </StackPanel>
 </Page>

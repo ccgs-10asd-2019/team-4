@@ -28,7 +28,7 @@ namespace Maths_Formula_App
         private void Exponential_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(new Exponentials_Notes());
-            this.Frame.Navigate(new Uri("Exponentials_Notes.xaml", UriKind.Relative));
+            this.Frame.Navigate(new Uri("Parabola_Notes.xaml", UriKind.Relative));
         }
 
         private void Quadratic_Formula_Click(object sender, RoutedEventArgs e)
@@ -38,7 +38,8 @@ namespace Maths_Formula_App
 
         private void Logarithms_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(new Logarithms_Notes());
+            this.Frame.Navigate(new Uri("Logarithms_Notes.xaml", UriKind.Relative));
         }
 
         private void Indices_Click(object sender, RoutedEventArgs e)
