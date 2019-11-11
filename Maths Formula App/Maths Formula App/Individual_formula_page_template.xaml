@@ -50,14 +50,14 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Quadratic_Formula" Content="Quadratic Formula" HorizontalAlignment="Left" Height="100" Margin="0,132,0,0" VerticalAlignment="Top" Width="200" Click="Quadratic_Formula_Click" Grid.RowSpan="2">
+            <Button x:Name="Quadratic_Formula" Content="Quadratic Formula" HorizontalAlignment="Left" Height="100" Margin="62,134,0,0" VerticalAlignment="Top" Width="195" Click="Quadratic_Formula_Click" Grid.RowSpan="2">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="Test calculator" HorizontalAlignment="Left" Height="100" Margin="0,137.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="New_Calc" Grid.RowSpan="2">
+            <Button Content="Algebracalc" HorizontalAlignment="Left" Height="100" Margin="57,137.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Click="New_Calc" Grid.RowSpan="2">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"/>

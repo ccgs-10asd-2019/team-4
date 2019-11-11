@@ -39,7 +39,7 @@
             <Button x:Name="Back" Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="101,10,0,0" VerticalAlignment="Top" Width="75" Foreground="White" Background="#FF223F84" Click="back_Click"/>
             <Button x:Name="Help" Content="Help" Grid.Column="1" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" Width="75" Background="#FF223F84" Foreground="White" Click="help_Click"/>
             <Image HorizontalAlignment="Left" Height="85" Margin="71,270,0,0" Grid.Row="1" VerticalAlignment="Top" Width="163" Source="Images/Quadratic Formula.png" RenderTransformOrigin="0.545,-0.959" Grid.Column="1"/>
-            <Button x:Name="___create_file_" Content="Save" HorizontalAlignment="Left" Margin="216,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="___create_file__Click" Grid.Column="1" Background="#FFF5F4FF"/>
+            <Button x:Name="___FillButton_" Content="Revert" HorizontalAlignment="Left" Margin="138,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Click="___FillButtonClick_" Grid.Column="1" Background="#FFF5F4FF"/>
 
         </Grid>
     </StackPanel>

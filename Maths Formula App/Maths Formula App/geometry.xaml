@@ -44,7 +44,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="SCTbutton" Content="Sin Cos Tan" HorizontalAlignment="Left" Height="100" Margin="0,166,0,0" VerticalAlignment="Top" Width="200" Click="SCTclick" Grid.RowSpan="2">
+            <Button x:Name="SCTbutton" Content="Sin Cos Tan" HorizontalAlignment="Left" Height="100" Margin="62,166,0,0" VerticalAlignment="Top" Width="194" Click="SCTclick" Grid.RowSpan="2">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"/>
@@ -53,12 +53,12 @@
             </Button>
             <Button Content="Test calculator" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="81,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="180" Click="New_Calc">
                 <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="15"/>
-                </Style>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="Pythagoras's Theorum" HorizontalAlignment="Left" Height="100" Margin="0,0.5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="195" Click="Button_Click">
+            <Button Content="Pythagoras's Theorum" HorizontalAlignment="Left" Height="100" Margin="62,154.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="194" Click="Button_Click" Grid.RowSpan="2">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"/>

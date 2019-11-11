@@ -27,28 +27,42 @@ namespace Maths_Formula_App
         {
             InitializeComponent();
 
-            var text = File.ReadAllText("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\ParabolaInfo.txt");//retreives the file from bin, debug. 
+            
+            var text = File.ReadAllText("ParabolaInfo.txt");
             ___informationBox_.Text = text;
+            
+
         }
 
         private void buttonClicked(object sender, RoutedEventArgs e)
         {
             var rColour = RandomColour();
-            
+
+            double constant1 = 0;
+            double constant2 = 0;
+
+            double output = 0;
+            bool result = double.TryParse(___inputBoxa__.Text, out output);
+
+            double output2 = 0;
+            bool result2 = double.TryParse(___inputBoxh__.Text, out output2);
+
+            double output3 = 0;
+            bool result3 = double.TryParse(___inputBoxk__.Text, out output3);
 
 
-            if (___inputBoxa__.Text == "")
+            if (___inputBoxa__.Text == "" || result == false || result2 == false || result3 == false)
             {
                 MessageBox.Show("Input something. ");
             }
 
 
-            else if (___inputBoxh__.Text == "")
+            else if (___inputBoxh__.Text == "" || result == false || result2 == false || result3 == false)
             {
                 MessageBox.Show("Input something. ");
             }
 
-            else if (___inputBoxk__.Text == "")
+            else if (___inputBoxk__.Text == "" || result == false || result2 == false || result3 == false)
             {
                 MessageBox.Show("Input something. ");
             }
@@ -64,24 +78,27 @@ namespace Maths_Formula_App
                 double origin_x = ___theCanvas_.Width / 2;
                 double origin_y = ___theCanvas_.Height / 2;
 
-                //bool food = false;
-
-                //while (food == false)
-                //{
-                //    double constant1 = 0;
-                //    double constant2 = 0;
-
-                //    if (x )
-                //    {
-
-                //    }
-                //}
-
-                for (var i = 0; i <= 100; i += 1)
-                {
-                    double y = (a * (i*i)) + (b * i) + (100*c);
-
                 
+
+                //for (double w = -50; w <= 50; w += 0.01)
+                //{
+                //    for (double x = -50; x <= 50; x += 0.01)
+                //    {
+                //        if ((w + x <= b + 0.5 && w + x >= b - 0.5) && (w * x >= c - 0.5 && w * x <= c + 0.5))
+                //        {
+                //            constant1 = w;
+                //            constant2 = x;
+                //        }
+                //    }
+                //}//tried to make a thing ot factorise a quadratic equation, didn't work. 
+
+
+                for (var i = 0; i <= 200; i += 1)
+                {
+                    //double y = -(i * constant1) * (i * constant2);
+
+                    double y = (a * (i * i)) + (b * i) + c;
+
 
                     Ellipse aCircle = new Ellipse();
                     aCircle.Width = 5;
@@ -111,6 +128,8 @@ namespace Maths_Formula_App
 
             }
         }
+
+       
 
         private void circle(double x, double y)
         {
@@ -161,7 +180,7 @@ namespace Maths_Formula_App
 
         private void ___create_file__Click(object sender, RoutedEventArgs e)
         {
-            StreamWriter File = new StreamWriter("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\ParabolaInfo.txt");//puts the file in the bin, debug. 
+            StreamWriter File = new StreamWriter("C:\\User Program Files\\anything you want\\team-4\\Maths Formula App\\ParabolaInfo.txt");//puts the file in the bin, debug. 
             File.Write(___informationBox_.Text);
             File.Close();
         }
@@ -169,7 +188,7 @@ namespace Maths_Formula_App
         
         private void ___FillButtonClick_(object sender, RoutedEventArgs e)
         {
-            var text = File.ReadAllText("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\ParabolaInfo.txt");//retreives the file from bin, debug. 
+            var text = File.ReadAllText("ParabolaInfo.txt");
             ___informationBox_.Text = text;
         }
     }
