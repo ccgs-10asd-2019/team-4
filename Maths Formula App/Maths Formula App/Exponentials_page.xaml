@@ -57,13 +57,6 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="___Cubic_Button_" Content="Cubic (empty)" HorizontalAlignment="Left" Height="100" Margin="44,153.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" Click="CubicClick" Grid.RowSpan="2">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="15"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
         </Grid>
     </StackPanel>
 </Page>

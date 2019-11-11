@@ -24,19 +24,19 @@ namespace Maths_Formula_App
         public Parabola_Notes()
         {
             InitializeComponent();
-            var text = File.ReadAllText("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\ParabolaInfo.txt");//retreives the file from bin, debug. 
+            var text = File.ReadAllText("ParabolaInfo.txt");//retreives the file from bin, debug. 
         }
 
         private void ___save_file__Click(object sender, RoutedEventArgs e)
         {
-            StreamWriter File = new StreamWriter("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\ParabolaInfo.txt");
+            StreamWriter File = new StreamWriter("ParabolaInfo.txt");
             File.Write(___informationBox_.Text);
             File.Close();
         }
 
         private void ___load_file__Click(object sender, RoutedEventArgs e)
         {
-            var text = File.ReadAllText("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\ParabolaInfo.txt");//retreives the file from bin, debug. 
+            var text = File.ReadAllText("ParabolaInfo.txt");//retreives the file from bin, debug. 
             ___informationBox_.Text = text;
         }
 

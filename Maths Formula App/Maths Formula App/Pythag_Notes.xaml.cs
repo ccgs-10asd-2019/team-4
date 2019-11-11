@@ -24,19 +24,19 @@ namespace Maths_Formula_App
         public Pythag_Notes()
         {
             InitializeComponent();
-            var text = File.ReadAllText("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\PythagInfo.txt");//retreives the file from bin, debug. 
+            var text = File.ReadAllText("PythagInfo.txt");//retreives the file from bin, debug. 
         }
 
         private void ___save_file__Click(object sender, RoutedEventArgs e)
         {
-            StreamWriter File = new StreamWriter("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\PythagInfo.txt");
+            StreamWriter File = new StreamWriter("PythagInfo.txt");
             File.Write(___informationBox_.Text);
             File.Close();
         }
 
         private void ___load_file__Click(object sender, RoutedEventArgs e)
         {
-            var text = File.ReadAllText("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\PythagInfo.txt");//retreives the file from bin, debug. 
+            var text = File.ReadAllText("PythagInfo.txt");//retreives the file from bin, debug. 
             ___informationBox_.Text = text;
         }
 

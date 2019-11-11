@@ -61,7 +61,7 @@ namespace Maths_Formula_App
             File.Close();
 
             Frame.Navigate(new IndecesSection());
-            this.Frame.Navigate(new Uri("IndecesSection.xaml", UriKind.Relative));
+            this.Frame.Navigate(new Uri("IndicesSection.xaml", UriKind.Relative));
         }
 
         private void helpClick(object sender, RoutedEventArgs e)
