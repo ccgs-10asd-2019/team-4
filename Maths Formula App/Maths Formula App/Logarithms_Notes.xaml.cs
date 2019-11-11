@@ -39,5 +39,16 @@ namespace Maths_Formula_App
             var text = File.ReadAllText("C:\\User Program Files\\Github Maths Formula App 2\\team-4\\Maths Formula App\\LogarithmInfo.txt");//retreives the file from bin, debug. 
             ___informationBox_.Text = text;
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(new Personal());
+            this.Frame.Navigate(new Uri("Personal.xaml", UriKind.Relative));
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

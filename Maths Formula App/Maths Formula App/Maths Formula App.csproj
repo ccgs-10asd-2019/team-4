@@ -64,6 +64,12 @@
     <Compile Include="Logarithms_Notes.xaml.cs">
       <DependentUpon>Logarithms_Notes.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Quadratic_Formula_Notes.xaml.cs">
+      <DependentUpon>Quadratic_Formula_Notes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pythag_Notes.xaml.cs">
+      <DependentUpon>Pythag_Notes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Parabola_Notes.xaml.cs">
       <DependentUpon>Parabola_Notes.xaml</DependentUpon>
     </Compile>
@@ -110,6 +116,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Logarithms_Notes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Quadratic_Formula_Notes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pythag_Notes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
