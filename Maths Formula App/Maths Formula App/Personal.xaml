@@ -29,7 +29,7 @@
             </Grid.RowDefinitions>
             <TextBlock Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" FontFamily="Sitka Small" Height="25" Width="140"/>
             <TextBlock  Background="#FF223F84" Foreground="White" HorizontalAlignment="Left" Margin="0,10,0,83.5" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="48" Height="100" Width="550" Grid.ColumnSpan="2" TextDecorations="Underline" FontWeight="Bold" Text="Notes" TextAlignment="Center"/>
-            <Button x:Name="Help" Content="Help" Grid.Column="2" HorizontalAlignment="Left" Height="76" Margin="140,12.5,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Background="#FF223F84" Click="Help_Button" Grid.Row="2">
+            <Button x:Name="Help" Content="Help" Grid.Column="2" HorizontalAlignment="Left" Height="76" Margin="21,10,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Background="#FF223F84" Click="Help_Button">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"/>
@@ -43,22 +43,14 @@
                     </Style>
                 </Button.Resources>
             </Button>
-
-            <Button Content="Parabolas" HorizontalAlignment="Left" Margin="0,0.5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="200" Click="Parabolas_Click" Height="100" Grid.Column="1">
+            <Button x:Name="Quadratic_Formula" Content="Quadratic Formula" HorizontalAlignment="Left" Height="100" Margin="0,166,0,0" VerticalAlignment="Top" Width="190" Click="Quadratic_Formula_Click" Grid.RowSpan="2">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Quadratic_Formula" Content="Quadratic Formula" HorizontalAlignment="Left" Height="100" Margin="0,166,0,0" VerticalAlignment="Top" Width="190" Click="Quadratic_Formula_Click" Grid.RowSpan="2">
-                <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="15"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <Button Content="Indices" HorizontalAlignment="Left" Height="100" Margin="0,0.5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="190" Click="Indices_Click">
+            <Button x:Name="Quadratic_Formula" Content="Quadratic Formula" HorizontalAlignment="Left" Height="100" Margin="-10,166,0,0" VerticalAlignment="Top" Width="200" Click="Quadratic_Formula_Click" Grid.RowSpan="2">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="15"/>
@@ -72,9 +64,16 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="Exponentials" Grid.Column="2" HorizontalAlignment="Left" Margin="0,1.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Height="100" Click="Exponential_Click">
+            <Button Content="Parabolas" Grid.Column="2" HorizontalAlignment="Left" Margin="0,1.5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Height="100" Click="Parabola_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="15"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Pythagoras" Grid.Column="2" HorizontalAlignment="Left" Margin="0,0.5,0,0" Grid.Row="2" VerticalAlignment="Top" Width="200" Height="100" Click="Pythagoras_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="15"/>
                     </Style>
                 </Button.Resources>

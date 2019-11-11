@@ -1,13 +1,11 @@
-Turning Point form: y = a(x-h)^2 + k
-	turning point is (h, k)
+Turning Point form: y = a(x-b)^2 + c
+	turning point is (b, c)
 
-X Intercept form: y = a(x-p)(x-q)
-	X.ints: (p, 0), (q, 0)
+X Intercept form: y = a(x-b)(x-c)
+	X.ints: (b, 0), (c, 0)
 
 Y Intercept form: y = ax^2  + bx + c
 	(0, c) is the y.int. 
 	
 
 a, b, and c are all constants. 
-
-h and k are interchangeable with b and c, as with p and q. 

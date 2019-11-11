@@ -28,7 +28,7 @@ namespace Maths_Formula_App
         private void Button(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(new Indicies());
-            this.Frame.Navigate(new Uri("Indicies.xaml", UriKind.Relative));
+            this.Frame.Navigate(new Uri("Indices.xaml", UriKind.Relative));
         }
 
         private void Help_Button(object sender, RoutedEventArgs e)
