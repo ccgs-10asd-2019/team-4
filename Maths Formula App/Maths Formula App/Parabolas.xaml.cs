@@ -78,7 +78,7 @@ namespace Maths_Formula_App
                 double origin_x = ___theCanvas_.Width / 2;
                 double origin_y = ___theCanvas_.Height / 2;
 
-                
+
 
                 //for (double w = -50; w <= 50; w += 0.01)
                 //{
@@ -90,8 +90,9 @@ namespace Maths_Formula_App
                 //            constant2 = x;
                 //        }
                 //    }
-                //}//tried to make a thing ot factorise a quadratic equation, didn't work. 
-
+                //}//tried to make a thing ot factorise a quadratic equation, didn't work. y = a*x^2 + b*x + c
+                
+                
 
                 for (var i = 0; i <= 200; i += 1)
                 {
